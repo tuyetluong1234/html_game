@@ -1,0 +1,349 @@
+extends ../layouts/master.jade
+
+append titlePage
+  title Cosmos Explore
+
+append body
+  +body(class="page-header-fixed page-quick-sidebar-over-content")
+
+append body-contents
+  include ../includes/header.jade
+  
+  .page-container.validator-detail-page.account-page
+    .page-content-wrapper
+      .page-content
+        .main-body-content.container
+          .cos-notice.custom-page-title
+            h2.page-title 
+              | ACCOUNT DETAILS
+          .main-md-content.validator-detail-content.md-full
+            .cos-table-item
+              .cos-item-content.account-item
+                .account-info-title
+                  .account-info-avatar
+                    .account-avatar
+                      img(src="../../assets/images/icon/code.svg", alt="Title")
+                  .account-info-add-detail
+                    .validator-info-link
+                      h4 Address
+                      p cosmos1ey69r37gfxvxg62sh4r0ktpuc46pzjrmz29g45
+                        span
+                          img(src="../../assets/images/icon/icon_file.svg", alt="Title")
+                    .validator-info-add-link
+                      h4 Reward Address
+                        span(data-toggle='tooltip', data-placement="bottom", title='you can edit your reward destination address.This is your current reward destination address')
+                          img(src="../../assets/images/icon/icon_question.svg", alt="Title")
+                      p
+                        |cosmos1ey69r37gfxvxg62sh4r0ktpuc46pzjrmz29g45
+                .account-info
+                  .account-data
+                    .acc-legend
+                      .acc-item
+                        .acc-item-label
+                        .account-value
+                          p.info-type Available
+                          p.info-percent 4.09%
+                          p.acc-item-value
+                            span(style="font-size:18px") 1,340.
+                            span(style="font-size:15px") 775303
+                      .acc-item
+                        .acc-item-label
+                        .account-value
+                          p.info-type Available
+                          p.info-percent 4.09%
+                          p.acc-item-value
+                            span(style="font-size:18px") 1,340.
+                            span(style="font-size:15px") 775303
+                      .acc-item
+                        .acc-item-label
+                        .account-value
+                          p.info-type Available
+                          p.info-percent 4.09%
+                          p.acc-item-value
+                            span(style="font-size:18px") 1,340.
+                            span(style="font-size:15px") 775303
+                      .acc-item
+                        .acc-item-label
+                        .account-value
+                          p.info-type Available
+                          p.info-percent 4.09%
+                          p.acc-item-value
+                            span(style="font-size:18px") 1,340.
+                            span(style="font-size:15px") 775303
+                      .acc-item
+                        .acc-item-label
+                        .account-value
+                          p.info-type Available
+                          p.info-percent 4.09%
+                          p.acc-item-value
+                            span(style="font-size:18px") 1,340.
+                            span(style="font-size:15px") 775303
+                  .account-amount
+                    .acc-total
+                      p.amount Total
+                        span.demon ATOMS
+                      p.amount-value
+                        span(style="font-size:30px") 32,769.
+                        span(style="font-size:24px") 659425
+                    .acc-price
+                      p.amount-label $3.85 / ATOM
+                      p.amount-usd $126,163.18
+          .main-md-content.delegation-table.row
+            .cos-table-item.col-md-6
+              .cos-item-content.md-full
+                .cos-title
+                  h3.title-cos Delegators
+                  .delegation-info
+                    img(src="../../assets/images/icon-avatar.svg", alt="icon")
+                    |1668 
+                    .delegator-change (
+                      img(src="../../assets/images/icon_up.svg", alt="icon")
+                      |598 in 24h )
+                .cos-table-list
+                  .table-responsive
+                    table.table.table-striped.table-bordered.table-hover.text-center
+                      thead
+                        tr
+                          th.text-left Delegator Address
+                          th.text-right Amount
+                          th.text-center Share
+                      tbody
+                        tr
+                          td.text-left 
+                            a(href="#") cosmos1fcyx4 ... fwu2hnhx
+                          td.text-right 
+                            p
+                              span(style="font-size:13px;") 2,999,000.
+                              span(style="font-size:11px;") 000051
+                              span.text-demon ATOM
+                          td.text-center
+                            p 20.32%   
+                        tr
+                          td.text-left 
+                            a(href="#") cosmos1cj7u0 ... 4upxtkzk
+                          td.text-right 
+                            p
+                              span(style="font-size:13px;") 1,500,000.
+                              span(style="font-size:11px;") 000276
+                              span.text-demon ATOM
+                          td.text-center
+                            p 10.16%
+                        tr
+                          td.text-left 
+                            a(href="#") cosmos176m2p ... rqfdht86
+                          td.text-right 
+                            p
+                              span(style="font-size:13px;") 900,000.
+                              span(style="font-size:11px;") 000020
+                              span.text-demon ATOM
+                          td.text-center
+                            p 6.09%
+                        tr
+                          td.text-left 
+                            a(href="#") cosmos1cj7u0 ... 4upxtkzk
+                          td.text-right 
+                            p
+                              span(style="font-size:13px;") 1,500,000.
+                              span(style="font-size:11px;") 000276
+                              span.text-demon ATOM
+                          td.text-center
+                            p 10.16%
+                        tr
+                          td.text-left 
+                            a(href="#") cosmos1cj7u0 ... 4upxtkzk
+                          td.text-right 
+                            p
+                              span(style="font-size:13px;") 1,500,000.
+                              span(style="font-size:11px;") 000276
+                              span.text-demon ATOM
+                          td.text-center
+                            p 10.16%      
+            .cos-table-item.col-md-6
+              .cos-item-content.md-full
+                .cos-title
+                  h3.title-cos
+                    | Power Events
+                .cos-table-list
+                  .table-responsive
+                    table.table.table-striped.table-bordered.table-hover.text-center
+                      thead
+                        tr
+                          th Height
+                          th.text-left TxHash
+                          th.text-left Amount
+                          th.text-right Time
+                      tbody
+                        tr
+                          td 
+                            a(href="#") 2400168
+                          td.text-left 
+                            a(href="#") 946FFA ... 19B597
+                          td.text-left.succes
+                            span.sum
+                            span(style="font-size:13px;") 1.
+                            span(style="font-size:11px;") 773283
+                          td.text-right
+                            p 2019-11-06 12:37:41
+                            p.cos-note (1m ago)
+                        tr
+                          td 
+                            a(href="#") 2400168
+                          td.text-left 
+                            a(href="#") Cosmostation
+                          td.text-left.minus 
+                            span.minus
+                            span(style="font-size:13px;") 0.
+                            span(style="font-size:11px;") 650945
+                          td.text-right 
+                            p 2019-11-01 14:18:47
+                            p.cos-note (37s ago)
+                        tr
+                          td 
+                            a(href="#") 2400169
+                          td.text-left 
+                            a(href="#") POS Bakerz
+                          td.text-left.minus 
+                            span.minus
+                            span(style="font-size:13px;") 3.
+                            span(style="font-size:11px;") 900000
+                          td.text-right
+                            p 2019-11-01 14:18:47
+                            p.cos-note (37s ago)
+                        tr
+                          td 
+                            a(href="#") 2400168
+                          td.text-left 
+                            a(href="#") Cosmostation
+                          td.text-left.succes 
+                            span.sum
+                            span(style="font-size:13px;") 3.
+                            span(style="font-size:11px;") 900000
+                          td.text-right 
+                            p 2019-11-01 14:18:47
+                            p.cos-note (37s ago)
+                        tr
+                          td 
+                            a(href="#") 2400168
+                          td.text-left 
+                            a(href="#") Cosmostation
+                          td.text-left.succes 
+                            span.sum
+                            span(style="font-size:13px;") 3.
+                            span(style="font-size:11px;") 900000
+                          td.text-right 
+                            p 2019-11-01 14:18:47
+                            p.cos-note (37s ago)
+          .cos-table-item.table-transactions
+            .cos-item-content.md-full
+              div.cos-table-title
+                .table-title
+                  h2.card-title Proposed Blocks
+                  p
+                    |A 4% reward bonus is given to the validator that proposes each block. This bonus is distributed to the chosen validator's delegators as well.
+                .table-total
+                  img(src="../../assets/images/icon/va_height.svg", alt="icon")
+                  span.title-total Total :
+                  |160,916 blocks
+              .cos-table-list
+                .table-responsive
+                  table.table.table-striped.table-bordered.table-hover.text-center
+                    thead
+                      tr
+                        th.text-left Height
+                        th.text-left Block Hash
+                        th.text-right Txs
+                        th.text-right Time
+                    tbody
+                      tr
+                        td.text-left
+                          a(href="#") 2462728
+                        td.text-left
+                          a(href="#") 4A3FABEE4CCE ... CD70C5D1
+                        td.text-right 0
+                        td.text-right
+                          p 2019-11-06 12:37:41
+                          p.cos-note (1m ago)
+                      tr
+                        td.text-left
+                          a(href="#") 2462728
+                        td.text-left
+                          a(href="#") 4A3FABEE4CCE ... CD70C5D1
+                        td.text-right 0
+                        td.text-right
+                          p 2019-11-06 12:37:41
+                          p.cos-note (1m ago)
+                      tr
+                        td.text-left
+                          a(href="#") 2462728
+                        td.text-left
+                          a(href="#") 4A3FABEE4CCE ... CD70C5D1
+                        td.text-right 0
+                        td.text-right
+                          p 2019-11-06 12:37:41
+                          p.cos-note (1m ago)
+                      tr
+                        td.text-left
+                          a(href="#") 2462728
+                        td.text-left
+                          a(href="#") 4A3FABEE4CCE ... CD70C5D1
+                        td.text-right 0
+                        td.text-right
+                          p 2019-11-06 12:37:41
+                          p.cos-note (1m ago)
+                .well
+                  .row-per-page
+                    span Rows per page:
+                    .select-option
+                      .dropdown
+                        button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+                            span 5
+                            span.caret
+                        ul.dropdown-menu
+                            li
+                              a(href='#') 
+                                span 10
+                            li
+                              a(href='#') 
+                                span 15
+                            li
+                              a(href='#') 
+                                span 20
+                            li
+                              a(href='#') 
+                                span 25
+                            li
+                              a(href='#') 
+                                span 30
+                  .note-pagination
+                    span 1-1 of 1
+                  .pagination-wrapper
+                    ul.pagination
+                      li.first
+                        a.cursor-none(href='#')
+                          svg(focusable='false', viewBox='0 0 24 24', aria-hidden='true', role='presentation')
+                            path(d='M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z')
+                            path(fill='none', d='M24 24H0V0h24v24z')
+                      li.prev
+                        a.cursor-none(href='#')
+                          svg(focusable='false', viewBox='0 0 24 24', aria-hidden='true', role='presentation')
+                            path(d='M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z')
+                            path(fill='none', d='M0 0h24v24H0V0z')
+                      li.next
+                        a(href='#')
+                          svg(focusable='false', viewBox='0 0 24 24', aria-hidden='true', role='presentation')
+                            path(d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z')
+                            path(fill='none', d='M0 0h24v24H0V0z')
+                      li.last
+                        a(href='#')
+                          svg(focusable='false', viewBox='0 0 24 24', aria-hidden='true', role='presentation')
+                            path(d='M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z')
+                            path(fill='none', d='M0 0h24v24H0V0z')
+            // .block-1
+          // .member-main
+      // .page-content
+    // .member
+  //.page-container
+  
+  ="\n"
+  include ../includes/footer.jade
+

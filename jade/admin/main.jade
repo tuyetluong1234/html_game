@@ -1,0 +1,240 @@
+extends ../layouts/master.jade
+
+append titlePage
+  title Cosmos Explore
+
+append body
+  +body(class="page-header-fixed page-quick-sidebar-over-content")
+
+append body-contents
+  include ../includes/header.jade
+  
+  .page-container.main-page
+    .page-content-wrapper
+      .main-search
+        .container
+          .md-full.md-main-search
+            .title.md-full
+              h1 
+                span.title-ct CØSMOS EXPLORER
+                  strong by MOLD
+            .md-search.row
+              .header-search.col-md-8.col-md-offset-2
+                .input-search
+                    input.form-control(type="text", placeholder='Search by Address, Block Height, TxHash...')
+                    i.fa.fa-search(aria-hidden='true')
+              .note-search.col-md-12
+                p Download Cosmostation Wallet!
+              .header-app.col-md-8.col-md-offset-2
+                .row
+                  .col-md-4
+                    a.link-app(href='#', target='_blank')
+                      img(src="../../assets/images/playstore.svg", alt='index')
+                  .col-md-4
+                    a.link-store(href='#', target='_blank')
+                      img(src="../../assets/images/appstore.svg", alt='index')
+                  .col-md-4
+                    a.link-wallet(href='#', target='_blank')
+                      img(src="../../assets/images/wallet.svg", alt='index')
+                      span Web Wallet
+
+      .page-content
+        .main-body-content.container
+          .cos-notice
+            span sponsored : 
+            img(src="../../assets/images/icon/iov_logo.svg", alt='index')
+            span Create a peronalized address for your wallet!
+            span.color Special offer! 
+          .cos-chart.row
+            .chart-item.cos-table-item.col-md-3
+              .cos-item-content.md-full
+                a(href="#")
+                  .md-chart-content
+                    .chart-title 
+                     span.title-md Price
+                     span.title-price.mrt-25 $3.76
+                     span.title-ct (coingecko)
+                  .chart-time
+                    span 
+                      <i class="fa fa-caret-up color2" aria-hidden="true"></i>
+                      | 11.59% (24h)
+
+                  .md-chart
+                    #cos-chart-main(style='min-width: 50px;width: 100%; height: 180px; margin: 0 auto')
+
+            .chart-item.cos-table-item.col-md-3
+              .cos-item-content.md-full
+                a(href="#")
+                  .md-chart-content
+                    .chart-title 
+                     span.title-md Height
+                     span.title-price.mrt-50 $3.76
+                  .chart-time
+                    span Last 10s ago
+
+            .chart-item.cos-table-item.col-md-3
+              .cos-item-content.md-full
+                a(href="#")
+                  .md-chart-content
+                    .chart-title 
+                     span.title-md Price
+                     span.title-price.mrt-25 73.03%
+                     span.title-ct 180 M / 247 M
+                  .chart-time
+                    span 
+                      <i class="fa fa-caret-down color4" aria-hidden="true"></i>
+                      | 11.59% (24h)
+
+                  .md-chart
+                    #cos-chart-main2(style='min-width: 50px;width: 100%; height: 180px; margin: 0 auto')
+
+            .chart-item.cos-table-item.col-md-3
+              .cos-item-content.md-full
+                a(href="#")
+                  .md-chart-content
+                    .chart-title 
+                     span.title-md Inflation
+                     span.title-price.mrt-50 7.38%
+                  .chart-time
+                    span Year
+
+          .main-md-content.row
+            .cos-table-item.col-md-6
+              .cos-item-content.md-full
+                .cos-title
+                  h3.title-cos
+                    span Blocks
+                    a.btn.show-more(href="blocks.html") Show More
+                .cos-table-list
+                  .table-responsive
+                    table.table.table-striped.table-bordered.table-hover.text-center
+                      thead
+                        tr
+                          th Height
+                          th.text-left Proposer
+                          th Txs
+                          th.text-right Time
+                      tbody
+                        tr
+                          td 
+                            a(href="#") 2400168
+                          td.text-left 
+                            a(href="#") Cosmostation
+                          td KAS
+                          td.text-right 
+                            p 2019-11-01 14:18:47
+                            p.cos-note (37s ago)
+                        tr
+                          td 
+                            a(href="#") 2400169
+                          td.text-left 
+                            a(href="#") POS Bakerz
+                          td KAS
+                          td.text-right
+                            p 2019-11-01 14:18:47
+                            p.cos-note (37s ago)
+                        tr
+                          td 
+                            a(href="#") 2400168
+                          td.text-left 
+                            a(href="#") Cosmostation
+                          td KAS
+                          td.text-right 
+                            p 2019-11-01 14:18:47
+                            p.cos-note (37s ago)
+                        tr
+                          td 
+                            a(href="#") 2400169
+                          td.text-left 
+                            a(href="#") POS Bakerz
+                          td KAS
+                          td.text-right
+                            p 2019-11-01 14:18:47
+                            p.cos-note (37s ago)
+                        tr
+                          td 
+                            a(href="#") 2400168
+                          td.text-left 
+                            a(href="#") Cosmostation
+                          td KAS
+                          td.text-right 
+                            p 2019-11-01 14:18:47
+                            p.cos-note (37s ago)
+            .cos-table-item.col-md-6
+                .cos-item-content.md-full
+                  .cos-title
+                    h3.title-cos
+                      span Transactions
+                      a.btn.show-more(href="transactions.html") Show More
+                  .cos-table-list
+                    .table-responsive
+                      table.table.table-striped.table-bordered.table-hover.text-center
+                        thead
+                          tr
+                            th Height
+                            th.text-left Tx Hash
+                            th.text-left Result
+                            th.text-right Time
+                        tbody
+                          tr
+                            td 
+                              a(href="#") 2400168
+                            td.text-left 
+                              a(href="#") Cosmostation
+                            td.text-left 
+                              span.fail Fail
+                            td.text-right 
+                              p 2019-11-01 14:18:47
+                              p.cos-note (37s ago)
+                          tr
+                            td 
+                              a(href="#") 2400169
+                            td.text-left 
+                              a(href="#") POS Bakerz
+                            td.text-left 
+                              span.fail Fail
+                            td.text-right
+                              p 2019-11-01 14:18:47
+                              p.cos-note (37s ago)
+                          tr
+                            td 
+                              a(href="#") 2400168
+                            td.text-left 
+                              a(href="#") Cosmostation
+                            td.text-left 
+                              span.success Success
+                            td.text-right 
+                              p 2019-11-01 14:18:47
+                              p.cos-note (37s ago)
+                          tr
+                            td 
+                              a(href="#") 2400169
+                            td.text-left 
+                              a(href="#") POS Bakerz
+                            td.text-left 
+                              span.success Success
+                            td.text-right
+                              p 2019-11-01 14:18:47
+                              p.cos-note (37s ago)
+                          tr
+                            td 
+                              a(href="#") 2400168
+                            td.text-left 
+                              a(href="#") Cosmostation
+                            td.text-left 
+                              span.success Success
+                            td.text-right 
+                              p 2019-11-01 14:18:47
+                              p.cos-note (37s ago)
+
+
+
+            // .block-1
+          // .member-main
+      // .page-content
+    // .member
+  //.page-container
+  
+  ="\n"
+  include ../includes/footer.jade
+

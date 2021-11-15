@@ -1,0 +1,47 @@
+extends ../layouts/master.jade
+
+append titlePage
+  title Login
+
+append body
+  +body(class="login")
+
+append body-contents
+  ="\n"
+  .page-container
+    .login_wrapper
+      .form.login_form.login
+        section.login_content
+          form(onsubmit="return validateContactForm(this);" method="POST" target="hidden_iframe" novalidate="novalidate")
+            h1 Login 
+            div
+              input.form-control(type='text', placeholder='Username', required='',name="name")
+            div
+              input.form-control(type='password', placeholder='Password', required='',name="pass")
+            div.submit-form
+              button.btn.green.button-submit Log in
+            .clearfix
+  script.
+    
+    function validateContactForm(form) {
+        var submitted = false;
+        // var v = grecaptcha.getResponse();
+        if (form.elements['name'].value == "") {
+            alert("모든항목을 입력해 주세요.");
+            form.elements['name'].focus();
+        }
+        else if (form.elements['pass'].value == "") {
+            alert("모든항목을 입력해 주세요.");
+            form.elements['pass'].focus();
+        }
+        
+        
+        else {
+            alert('ok');
+            submitted = true;
+        }
+
+        return submitted;
+        
+    }
+    

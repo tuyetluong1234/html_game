@@ -1,0 +1,39 @@
+#popupsend_coupon.modal.fade(tabindex='-1', aria-hidden='true', data-backdrop="static" data-keyboard="false")
+  .modal-dialog
+    .modal-content
+      .modal-header
+        strong.modal-title 상품권 발송
+        button.close(type='button', data-dismiss='modal', aria-hidden='true')
+      .modal-body
+        .form-search-wrapper
+          form.form-search.form-horizontal.sb-container-style-1(action='#')
+            .form-body
+              .form-group.mrb-30
+                .col-md-3.line-30
+                  span 핸드폰 번호  :
+
+                ="\n"
+                .col-md-9
+                  input.form-control#coupon-number(type='search', name='')
+              .full.border-full.pad-10-30.mrb-30
+                p 에코마일리지 [문화/도서상품권] 발송드립니다.
+                p 상품권 번호는 
+                  span#popup-coupon-note  
+                  span 입니다.
+                p 유효기간은 [2018-05-30] 까지 입니다.
+
+                    
+
+              ="\n"
+              .form-group.text-center
+                .col-md-12
+                  a.btn.green(href='#') 발송하기
+          // .form-search
+        // .form-search-wrapper
+        
+        
+              
+        //.table-wrapper
+
+        
+// .popupRecommendSearch

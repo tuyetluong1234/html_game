@@ -1,0 +1,260 @@
+extends ../layouts/master.jade
+
+append titlePage
+  title Cosmos Explore
+
+append body
+  +body(class="page-header-fixed page-quick-sidebar-over-content")
+
+append body-contents
+  include ../includes/header.jade
+  
+  .page-container.blocks-page
+    .page-content-wrapper
+      
+      .page-content
+        .main-body-content.container
+          .cos-notice.custom-page-title
+            h2.page-title VALIDATORS
+            div.blocks-status
+              div.status-items
+                span Price : 
+                | $
+                | 3.77
+              div.status-items
+                span Height : 
+                | 2,448,628
+              div.status-items
+                div(data-toggle='tooltip', data-placement="bottom", title='Total amount of bonded tokens in the network.')
+                  span Bonded : 
+                  | 180,225,731
+              div.status-items
+                span Inflation : 
+                | 7.38%
+          .cos-validator.row
+            .validator-item.cos-table-item.col-md-3
+              .cos-item-content.md-full
+                .md-validator-content
+                  .validator-title 
+                   img(src="../../assets/images/icon/va_height.svg", alt='index')
+                   span.title-md Height
+                  span.vali_value 
+                    | 11.59% (24h)
+            .validator-item.cos-table-item.col-md-3
+              .cos-item-content.md-full
+                .md-validator-content
+                  .validator-title 
+                   img(src="../../assets/images/icon/va_validator.svg", alt='index')
+                   span.title-md Validators
+                  span.vali_value  
+                    | 100 / 205
+            .validator-item.cos-table-item.col-md-3
+              .cos-item-content.md-full
+                .md-validator-content
+                  .validator-title 
+                   img(src="../../assets/images/icon/va_token.svg", alt='index')
+                   span.title-md Bonded Tokens
+                  span.vali_value  
+                    | 180 M / 247 M
+            .validator-item.cos-table-item.col-md-3
+              .cos-item-content.md-full
+                .md-validator-content
+                  .validator-title 
+                   img(src="../../assets/images/icon/va_block.svg", alt='index')
+                   span.title-md Block Time
+                  span.vali_value  
+                    | 11.99s         
+          .main-md-content.md-full.main-validator
+            .cos-table-item.md-full
+              .cos-item-content.md-full
+                .validator-search.md-full.mdb_10.fl_right
+                  .valida-search
+                    .input-search
+                      input.form-control(type="text", placeholder='Search Validetors')
+                  .valida-button
+                    button.btn.btn-default.active(type='button', data-dismiss='modal') Active
+                    button.btn.btn-default(type='button', data-dismiss='modal') Inactive
+                .cos-table-list.md-full
+                  .table-responsive
+                    table.table.table-striped.table-bordered.table-hover.text-center
+                      thead
+                        tr
+                          th.text-center Rank
+                          th.text-left Validator
+                          th.text-center.td_pd Voting Power
+                          th % Cumulative Share
+                          th Commission
+                          th Uptime
+                      tbody
+                        tr
+                          th.text-center(scope="row") 
+                            div.stt 1
+                          td.text-left
+                            a(href="detail_validators.html") 
+                              div.va_avatar
+                                img(src="../../assets/images/img1.png", alt="Title")
+                              span.va_name
+                                |Sikka
+                          td.text-right
+                            p 14,739,272
+                            p.value-percent 8.17%
+                          td.text-right
+                            div.prog
+                              div.cum(style="width:0%")
+                              div.fill(style="width:8.17%")
+                            p.value 8.17%
+                          td.text-right 3.00%
+                          
+                          td.text-right 100%
+                        tr
+                          th(scope="row") 
+                            div.stt 2
+                          td.text-left
+                            a(href="detail_blocks.html") 
+                              div.va_avatar
+                                img(src="../../assets/images/img2.png", alt="Title")
+                              span.va_name
+                                |Polychain Labs
+                          td.text-right
+                            p 12,953,587
+                            p.value-percent 7.18%
+                          td.text-right
+                            div.prog
+                              div.cum(style="width:8.18446%;")
+                              div.fill(style="width:7.18%;")
+                            p.value 15.37%
+                          td.text-right 20.00%
+
+                          td.text-right 100%
+                        tr
+                          th(scope="row") 
+                            div.stt 3
+                          td.text-left
+                            a(href="detail_blocks.html") 
+                              div.va_avatar
+                                img(src="../../assets/images/img3.png", alt="Title")
+                              span.va_name
+                                |🐠stake.fish | bitfish
+                          td.text-right
+                            p 12,354,222
+                            p.value-percent 6.85%
+                          td.text-right
+                            div.prog
+                              div.cum(style="width:15.37%;")
+                              div.fill(style="width:6.85%;")
+                            p.value 22.22%
+                          td.text-right 4.00%
+
+                          td.text-right 100%
+                        tr
+                          th(scope="row") 
+                            div.stt 4
+                          td.text-left
+                            a(href="detail_blocks.html") 
+                              div.va_avatar
+                                img(src="../../assets/images/img4.png", alt="Title")
+                              span.va_name
+                                |DokiaCapital
+                          td.text-right
+                            p 11,902,620
+                            p.value-percent 6.60%
+                          td.text-right
+                            div.prog
+                              div.cum(style="width:22.2219%;")
+                              div.fill(style="width:6.6%;")
+                            p.value 28.82%
+                          td.text-right 15.00%
+
+                          td.text-right 100%   
+                        tr
+                          th(scope="row") 
+                            div.stt 5
+                          td.text-left
+                            a(href="detail_blocks.html") 
+                              div.va_avatar
+                                img(src="../../assets/images/img5.png", alt="Title")
+                              span.va_name
+                                |SparkPool
+                          td.text-right
+                            p 8,661,141
+                            p.value-percent 4.80%
+                          td.text-right
+                            div.prog
+                              div.cum(style="width:28.8241%;")
+                              div.fill(style="width:4.8%;")
+                            p.value 33.62%
+                          td.text-right 4.00%
+                          td.text-right 100%  
+                        tr
+                          th(scope="row") 
+                            div.stt 6
+                          td.text-left
+                            a(href="detail_blocks.html") 
+                              div.va_avatar
+                                img(src="../../assets/images/img6.png", alt="Title")
+                              span.va_name
+                                |Certus One
+                          td.text-right
+                            p 7,588,642
+                            p.value-percent 4.20%
+                          td.text-right
+                            div.prog
+                              div.cum(style="width:33.6302%;")
+                              div.fill(style="width:4.2%;")
+                            p.value 37.83%
+                          td.text-right 12.50%
+                          td.text-right 100%   
+                        tr
+                          th(scope="row") 
+                            div.stt 7
+                          td.text-left
+                            a(href="detail_blocks.html") 
+                              div.va_avatar
+                                img(src="../../assets/images/img7.png", alt="Title")
+                              span.va_name
+                                |Cosmostation
+                          td.text-right
+                            p 7,143,982
+                            p.value-percent 3.96%
+                          td.text-right
+                            div.prog
+                              div.cum(style="width:37.8397%;")
+                              div.fill(style="width:3.96%;")
+                            p.value 41.80%
+                          td.text-right 5.00%
+                          td.text-right 100%   
+                  .well
+                    .note-pagination
+                      span 1-20 of 2402038
+                    .pagination-wrapper
+                      ul.pagination
+                        li.first
+                          a.cursor-none(href='#')
+                            svg(focusable='false', viewBox='0 0 24 24', aria-hidden='true', role='presentation')
+                              path(d='M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z')
+                              path(fill='none', d='M24 24H0V0h24v24z')
+                        li.prev
+                          a.cursor-none(href='#')
+                            svg(focusable='false', viewBox='0 0 24 24', aria-hidden='true', role='presentation')
+                              path(d='M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z')
+                              path(fill='none', d='M0 0h24v24H0V0z')
+                        li.next
+                          a(href='#')
+                            svg(focusable='false', viewBox='0 0 24 24', aria-hidden='true', role='presentation')
+                              path(d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z')
+                              path(fill='none', d='M0 0h24v24H0V0z')
+                        li.last
+                          a(href='#')
+                            svg(focusable='false', viewBox='0 0 24 24', aria-hidden='true', role='presentation')
+                              path(d='M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z')
+                              path(fill='none', d='M0 0h24v24H0V0z')
+
+            // .block-1
+          // .member-main
+      // .page-content
+    // .member
+  //.page-container
+  
+  ="\n"
+  include ../includes/footer.jade
+

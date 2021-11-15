@@ -1,0 +1,56 @@
+.header-fix
+    .page-header
+      .page-header-inner.container
+        // BEGIN LOGO
+        .logo
+            a(href="main.html")
+                img(src="../../assets/images/logo/logo.png", alt='index')
+        .header-search
+            .input-search
+                input.form-control(type="text", placeholder='Search by Address, Block Height, TxHash...')
+                i.fa.fa-search(aria-hidden='true')
+        .header-option-link.select-option
+            .dropdown
+                button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+                    img(src="../../assets/images/logo/logo2.png", alt='index', width='15px')
+                    span cosmoshub-2
+                    span.caret
+                ul.dropdown-menu
+                    li
+                      a(href='#') 
+                        img(src="../../assets/images/logo/logo2.png", alt='cosmoshub-2', width='18px')
+                        span cosmoshub-2
+                    li
+                      a(href='#') 
+                        img(src="../../assets/images/logo/atom_token.svg", alt='irishub', width='18px')
+                        span irishub
+                    li
+                      a(href='#') 
+                        img(src="../../assets/images/logo/kava_token.svg", alt='kava-testnet-3000', width='18px')
+                        span kava-testnet-3000
+        
+
+
+            // .dropdown-user
+        // .top-menu
+    // .page-header
+    .page-menu
+        .page-menu-inner.container
+            .cos-menu.md-full
+                ul.cos-nav-menu
+                    li
+                      a.dashboard.active(href='main.html', alt='Dashboard') 
+                        span Dashboard
+                    li
+                      a.validators(href='validators.html', alt='Validators')  
+                        span Validators
+                    li
+                      a.blocks(href='blocks.html', alt='Blocks')
+                        span Blocks
+                    li
+                      a.transactions(href='transactions.html', alt='Transactions') 
+                        span Transactions
+                    li
+                      a.votings(href='votings.html', alt='Votings') 
+                        span Votings
+.clearfix

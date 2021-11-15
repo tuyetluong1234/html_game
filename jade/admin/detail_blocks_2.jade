@@ -1,0 +1,57 @@
+extends ../layouts/master.jade
+
+append titlePage
+  title Cosmos Explore
+
+append body
+  +body(class="page-header-fixed page-quick-sidebar-over-content")
+
+append body-contents
+  include ../includes/header.jade
+  
+  .page-container.blocks-detail-page
+    .page-content-wrapper
+      
+      .page-content
+        .main-body-content.container
+          .cos-notice.custom-page-title
+            h2.page-title 
+              | Details for Block #
+              span 2438782
+          .main-md-content.md-full
+            .cos-table-item.md-full
+              .cos-item-content.md-full
+                div
+                  h4.card-title.under-line Header
+                .header-info
+                  .header-info-item
+                    .info-label-title Height
+                    .info-label 2438782
+                  .header-info-item
+                    .info-label-title Block Time
+                    .info-label 25s ago ( 2019-11-04 16:16:45 )
+                  .header-info-item
+                    .info-label-title Block Hash
+                    .info-label F0AF86CB9C7C49A1584FAEE2AD683073409E1F0C68F262E6952150D1908EFACE
+                  .header-info-item
+                    .info-label-title Number of Transactions
+                    .info-label 1
+                  .header-info-item
+                    .info-label-title Proposer
+                    .info-label
+                      a(href="#") DokiaCapital
+              .cos-item-content.md-full
+                div
+                  h4.card-title Transactions
+                div.no-transac
+                  img(src="../../assets/images/none-item.svg")
+                  | No Transactions
+            // .block-1
+          // .member-main
+      // .page-content
+    // .member
+  //.page-container
+  
+  ="\n"
+  include ../includes/footer.jade
+

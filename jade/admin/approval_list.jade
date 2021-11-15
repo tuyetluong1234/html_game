@@ -1,0 +1,88 @@
+extends ../layouts/master.jade
+
+append titlePage
+  title Cosmos Explore
+
+append body
+  +body(class="page-header-fixed page-quick-sidebar-over-content")
+
+append body-contents
+  include ../includes/header.jade
+  
+  ="\n"
+  .page-container
+    //- include ../includes/page-sidebar.jade
+
+    ="\n"
+    .page-content-wrapper
+      .page-content
+        .container
+          .main-body-content.member-page
+            .page-bar
+              ul#page-breadcrumb.page-breadcrumb
+            ="\n"
+            .member-title-table
+              .title-page.full.border-bottom.mrb-30
+                h3.bold.pull-left 에코 설정값
+                span 에코 마일리지 정책을 설정합니다.
+              
+              .md-ct.row
+                .col-md-4.pull-right
+                  .input-search
+                    input.form-control(type="text", placeholder='제목으로 검색')
+                    i.fa.fa-search(aria-hidden='true')
+                
+
+            .table-member-mng.table-responsive
+              table.table.table-striped.table-bordered.table-hover.text-center
+                thead
+                  tr
+                    th 번호
+                    th 제목
+                    th 시작날짜
+                    th 종료날짜
+                    th 등록날짜
+                tbody
+                  tr
+                    td 10
+                    td A1
+                    td KAS
+                    td 2017.04.04
+                    td 2017.04.04
+                  tr
+                    td 10
+                    td A1
+                    td KAS
+                    td 2017.04.04
+                    td 2017.04.04
+                  tr
+                    td 10
+                    td A1
+                    td KAS
+                    td 2017.04.04
+                    td 2017.04.04
+                  tr
+                    td 10
+                    td A1
+                    td KAS
+                    td 2017.04.04
+                    td 2017.04.04
+                  
+            
+            button.btn.green.dowload-form 승인 기준 추가    
+                    
+            //.table-member-mng
+
+            ="\n"
+            include ../includes/rw-pagination.jade
+            // .block-1
+          // .member-main
+      // .page-content
+    // .member
+  //.page-container
+  
+  ="\n"
+  include ../includes/footer.jade
+  
+  ="\n"
+  include ../includes/popupConfirmDelete.jade

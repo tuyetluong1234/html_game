@@ -1,0 +1,459 @@
+extends ../layouts/master.jade
+
+append titlePage
+  title Cosmos Explore
+
+append body
+  +body(class="page-header-fixed page-quick-sidebar-over-content")
+
+append body-contents
+  include ../includes/header.jade
+  
+  .page-container.validator-detail-page
+    .page-content-wrapper
+      .page-content
+        .main-body-content.container
+          .cos-notice.custom-page-title
+            h2.page-title 
+              | VALIDATOR DETAILS
+              span 2438782
+          .main-md-content.validator-detail-content.md-full
+            .cos-table-item.md-full
+              .cos-item-content.md-full
+                .validator-info-title
+                  .validator-info-avatar
+                    .validator-avatar
+                      img(src="../../assets/images/img1.png", alt="Title")
+                    span.rank 1
+                  .validator-info-add-title
+                    .validator-info-status
+                      h2.card-title.under-line Sikka
+                      .validator-status
+                        span 
+                          img(src="../../assets/images/icon_check.svg", alt="icon")
+                          |active
+                    .validator-info-add-detail
+                      .validator-info-link
+                        h4 Operator Address
+                          div.icon-button(data-toggle='tooltip', data-placement="bottom", title='Validator operator address at which token holders delegate their voting powers to')
+                            img(src="../../assets/images/icon_question.svg", alt="Title")
+                        p cosmos1ey69r37gfxvxg62sh4r0ktpuc46pzjrmz29g45
+                      .validator-info-add-link
+                        h4 Address
+                        a(href="account_detail.html")
+                          |cosmos1ey69r37gfxvxg62sh4r0ktpuc46pzjrmz29g45
+                .validator-info
+                  .validator-info-item
+                    .info-label-title Website
+                    .info-label 
+                      a(href="https://www.sikka.tech/") sikka.tech
+                  .validator-info-item
+                    .info-label-title Commission
+                    .info-label 3.00%
+                  .validator-info-item
+                    .info-label-title Uptime
+                    .info-label 100%
+                  .validator-info-item
+                    .info-label-title Voting Power
+                    .info-label 8.18% (14,754,289.929521ATOM)
+                  .validator-info-item
+                    .info-label-title Bonded Height
+                    .info-label
+                      a(href="detail_blocks.html") 1
+                  .validator-info-item
+                    .info-label-title Details
+                    .info-label Sunny Aggarwal (@sunnya97) and Dev Ojha (@ValarDragon)
+          .main-md-content.delegated-missed.md-full
+            .row
+              .cos-delegated-item.col-md-8
+                .cos-item-content.md-full
+                  .cos-title
+                    h3.title-cos Delegators
+                  .delegated-content
+                    .delegated-content-chart
+                      .md-chart
+                        #cos-pie-chart(style='min-width: 50px;width: 150px; height: 150px; margin: 0 auto')
+                    .delegated-content-value
+                      .delegated-value
+                        p.title Total
+                        p 
+                          span(style="font-size:18px;") 14,745,522.
+                          span(style="font-size:15px;") 972333
+                          span.delegated-denom ATOM
+                      .delegated-legend
+                        .legend-item
+                          p.item-type Self
+                          p.item-percent 0.20%
+                          p.item-value
+                            span(style="font-size:15px;") 29,800.
+                            span(style="font-size:13px;") 190314
+                        .legend-item.others
+                          p.item-type Others
+                          p.item-percent 99.79%
+                          p.item-value
+                            span(style="fonSt-size:15px;") 14,715,722.
+                            span(style="font-size:13px;") 782018
+              .cos-missed-item.col-md-4
+                .cos-item-content.md-full
+                  .cos-title
+                    h3.title-cos Missed Blocks
+                  .missed-content
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+                    a(href="#" data-toggle='tooltip', data-placement="bottom", title='2463524')
+          .main-md-content.delegation-table.row
+            .cos-table-item.col-md-6
+              .cos-item-content.md-full
+                .cos-title
+                  h3.title-cos Delegators
+                  .delegation-info
+                    img(src="../../assets/images/icon-avatar.svg", alt="icon")
+                    |1668 
+                    .delegator-change (
+                      img(src="../../assets/images/icon_up.svg", alt="icon")
+                      |598 in 24h )
+                .cos-table-list
+                  .table-responsive
+                    table.table.table-striped.table-bordered.table-hover.text-center
+                      thead
+                        tr
+                          th.text-left Delegator Address
+                          th.text-right Amount
+                          th.text-center Share
+                      tbody
+                        tr
+                          td.text-left 
+                            a(href="#") cosmos1fcyx4 ... fwu2hnhx
+                          td.text-right 
+                            p
+                              span(style="font-size:13px;") 2,999,000.
+                              span(style="font-size:11px;") 000051
+                              span.text-demon ATOM
+                          td.text-center
+                            p 20.32%   
+                        tr
+                          td.text-left 
+                            a(href="#") cosmos1cj7u0 ... 4upxtkzk
+                          td.text-right 
+                            p
+                              span(style="font-size:13px;") 1,500,000.
+                              span(style="font-size:11px;") 000276
+                              span.text-demon ATOM
+                          td.text-center
+                            p 10.16%
+                        tr
+                          td.text-left 
+                            a(href="#") cosmos176m2p ... rqfdht86
+                          td.text-right 
+                            p
+                              span(style="font-size:13px;") 900,000.
+                              span(style="font-size:11px;") 000020
+                              span.text-demon ATOM
+                          td.text-center
+                            p 6.09%
+                        tr
+                          td.text-left 
+                            a(href="#") cosmos1cj7u0 ... 4upxtkzk
+                          td.text-right 
+                            p
+                              span(style="font-size:13px;") 1,500,000.
+                              span(style="font-size:11px;") 000276
+                              span.text-demon ATOM
+                          td.text-center
+                            p 10.16%
+                        tr
+                          td.text-left 
+                            a(href="#") cosmos1cj7u0 ... 4upxtkzk
+                          td.text-right 
+                            p
+                              span(style="font-size:13px;") 1,500,000.
+                              span(style="font-size:11px;") 000276
+                              span.text-demon ATOM
+                          td.text-center
+                            p 10.16%      
+            .cos-table-item.col-md-6
+              .cos-item-content.md-full
+                .cos-title
+                  h3.title-cos
+                    | Power Events
+                .cos-table-list
+                  .table-responsive
+                    table.table.table-striped.table-bordered.table-hover.text-center
+                      thead
+                        tr
+                          th Height
+                          th.text-left TxHash
+                          th.text-left Amount
+                          th.text-right Time
+                      tbody
+                        tr
+                          td 
+                            a(href="#") 2400168
+                          td.text-left 
+                            a(href="#") 946FFA ... 19B597
+                          td.text-left.succes
+                            span.sum
+                            span(style="font-size:13px;") 1.
+                            span(style="font-size:11px;") 773283
+                          td.text-right
+                            p 2019-11-06 12:37:41
+                            p.cos-note (1m ago)
+                        tr
+                          td 
+                            a(href="#") 2400168
+                          td.text-left 
+                            a(href="#") Cosmostation
+                          td.text-left.minus 
+                            span.minus
+                            span(style="font-size:13px;") 0.
+                            span(style="font-size:11px;") 650945
+                          td.text-right 
+                            p 2019-11-01 14:18:47
+                            p.cos-note (37s ago)
+                        tr
+                          td 
+                            a(href="#") 2400169
+                          td.text-left 
+                            a(href="#") POS Bakerz
+                          td.text-left.minus 
+                            span.minus
+                            span(style="font-size:13px;") 3.
+                            span(style="font-size:11px;") 900000
+                          td.text-right
+                            p 2019-11-01 14:18:47
+                            p.cos-note (37s ago)
+                        tr
+                          td 
+                            a(href="#") 2400168
+                          td.text-left 
+                            a(href="#") Cosmostation
+                          td.text-left.succes 
+                            span.sum
+                            span(style="font-size:13px;") 3.
+                            span(style="font-size:11px;") 900000
+                          td.text-right 
+                            p 2019-11-01 14:18:47
+                            p.cos-note (37s ago)
+                        tr
+                          td 
+                            a(href="#") 2400168
+                          td.text-left 
+                            a(href="#") Cosmostation
+                          td.text-left.succes 
+                            span.sum
+                            span(style="font-size:13px;") 3.
+                            span(style="font-size:11px;") 900000
+                          td.text-right 
+                            p 2019-11-01 14:18:47
+                            p.cos-note (37s ago)
+          .cos-table-item.table-transactions
+            .cos-item-content.md-full
+              div.cos-table-title
+                .table-title
+                  h2.card-title Proposed Blocks
+                  p
+                    |A 4% reward bonus is given to the validator that proposes each block. This bonus is distributed to the chosen validator's delegators as well.
+                .table-total
+                  img(src="../../assets/images/icon/va_height.svg", alt="icon")
+                  span.title-total Total :
+                  |160,916 blocks
+              .cos-table-list
+                .table-responsive
+                  table.table.table-striped.table-bordered.table-hover.text-center
+                    thead
+                      tr
+                        th.text-left Height
+                        th.text-left Block Hash
+                        th.text-right Txs
+                        th.text-right Time
+                    tbody
+                      tr
+                        td.text-left
+                          a(href="#") 2462728
+                        td.text-left
+                          a(href="#") 4A3FABEE4CCE ... CD70C5D1
+                        td.text-right 0
+                        td.text-right
+                          p 2019-11-06 12:37:41
+                          p.cos-note (1m ago)
+                      tr
+                        td.text-left
+                          a(href="#") 2462728
+                        td.text-left
+                          a(href="#") 4A3FABEE4CCE ... CD70C5D1
+                        td.text-right 0
+                        td.text-right
+                          p 2019-11-06 12:37:41
+                          p.cos-note (1m ago)
+                      tr
+                        td.text-left
+                          a(href="#") 2462728
+                        td.text-left
+                          a(href="#") 4A3FABEE4CCE ... CD70C5D1
+                        td.text-right 0
+                        td.text-right
+                          p 2019-11-06 12:37:41
+                          p.cos-note (1m ago)
+                      tr
+                        td.text-left
+                          a(href="#") 2462728
+                        td.text-left
+                          a(href="#") 4A3FABEE4CCE ... CD70C5D1
+                        td.text-right 0
+                        td.text-right
+                          p 2019-11-06 12:37:41
+                          p.cos-note (1m ago)
+                .well
+                  .row-per-page
+                    span Rows per page:
+                    .select-option
+                      .dropdown
+                        button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+                            span 5
+                            span.caret
+                        ul.dropdown-menu
+                            li
+                              a(href='#') 
+                                span 10
+                            li
+                              a(href='#') 
+                                span 15
+                            li
+                              a(href='#') 
+                                span 20
+                            li
+                              a(href='#') 
+                                span 25
+                            li
+                              a(href='#') 
+                                span 30
+                  .note-pagination
+                    span 1-1 of 1
+                  .pagination-wrapper
+                    ul.pagination
+                      li.first
+                        a.cursor-none(href='#')
+                          svg(focusable='false', viewBox='0 0 24 24', aria-hidden='true', role='presentation')
+                            path(d='M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z')
+                            path(fill='none', d='M24 24H0V0h24v24z')
+                      li.prev
+                        a.cursor-none(href='#')
+                          svg(focusable='false', viewBox='0 0 24 24', aria-hidden='true', role='presentation')
+                            path(d='M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z')
+                            path(fill='none', d='M0 0h24v24H0V0z')
+                      li.next
+                        a(href='#')
+                          svg(focusable='false', viewBox='0 0 24 24', aria-hidden='true', role='presentation')
+                            path(d='M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z')
+                            path(fill='none', d='M0 0h24v24H0V0z')
+                      li.last
+                        a(href='#')
+                          svg(focusable='false', viewBox='0 0 24 24', aria-hidden='true', role='presentation')
+                            path(d='M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z')
+                            path(fill='none', d='M0 0h24v24H0V0z')
+            // .block-1
+          // .member-main
+      // .page-content
+    // .member
+  //.page-container
+  
+  ="\n"
+  include ../includes/footer.jade
+

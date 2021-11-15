@@ -1,0 +1,39 @@
+#popuppostcode-member.modal.fade(tabindex='-1', aria-hidden='true', data-backdrop="static" data-keyboard="false")
+  .modal-dialog
+    .modal-content
+      .modal-header
+        h4.bold 우편번호 찾기
+        button.close(type='button', data-dismiss='modal', aria-hidden='true')
+      .modal-body
+        p.pdl-10 주소를 검색해주세요.
+        .full
+          .col-md-10
+            input.form-control.pull-left(type="text" value ='')
+          .col-md-2
+            button.btn.green.width-100 검색
+        .full
+          .col-md-9
+            a.btn.green.width-100 주소
+          .col-md-3
+            a.btn.green.width-100 우편번호
+        .full
+          .col-md-12
+            table.table.table-striped.table-bordered.table-hover.align-middle.text-center
+              tbody
+                tr
+                  td.width75 abcd
+                  td 13996
+                tr
+                  td.width75 abcd
+                  td 13996
+                tr
+                  td.width75 abcd
+                  td 13996
+
+          .col-md-12
+            .alert.text-center
+              strong 검색 결과값이 없습니다.
+
+
+      
+// .popupConfirmDelete

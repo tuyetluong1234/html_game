@@ -1,0 +1,189 @@
+extends ../layouts/master.jade
+
+append titlePage
+  title bike code list 2
+
+append body
+  +body(class="page-header-fixed page-quick-sidebar-over-content")
+
+append body-contents
+  .sidebar-left
+    include ../includes/page-sidebar-left.jade
+  include ../includes/header.jade
+  
+  ="\n"
+  .page-container
+    //- include ../includes/page-sidebar.jade
+
+    ="\n"
+    .page-content-wrapper.demo1
+      .page-content
+        .container
+          .main-body-content.member-page
+            .page-bar
+              ul#page-breadcrumb.page-breadcrumb
+            ="\n"
+            .member-title-table
+              .title-page.full.border-bottom.mrb-30
+                h3.bold.pull-left 에코 설정값 상세
+              .full.border-full.pad-20-30.mrb-40
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 제목 
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-3
+                      input.form-control(type="text" value ='1000')
+                    
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 적용 기간 설정
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-4.datepicker-form
+                    .item.icon-next.datepicker-item
+                      span
+                        input.form-control.date-picker(name='test138', type='text', data-date-format='yyyy/mm/dd', value='2016/08/23')
+                      span.text 달력
+                    .item.datepicker-item.last
+                      span
+                        input.form-control.date-picker(name='test138', type='text', data-date-format='yyyy/mm/dd', value='2016/08/24')
+                      span.text 달력
+
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 거리당 마일리지 
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-3
+                    input.form-control.text-right(type="text" value ='')
+                  .col-md-1
+                    span.line-30 Point/km 
+
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 일일 최대 승인 거리
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-3
+                    input.form-control.text-right(type="text" value ='')
+                  .col-md-1
+                    span.line-30 km/인
+
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 1회 최대 승인 거리
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-3
+                    input.form-control.text-right(type="text" value ='')
+                  .col-md-1
+                    span.line-30 km/인
+
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 일일 최대 승인 횟수
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-3
+                    input.form-control.text-right(type="text" value ='')
+                  .col-md-1
+                    span.line-30 회
+
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 승인 기준일
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-3
+                    input.form-control.text-right(type="text" value ='')
+                  .col-md-1
+                    span.line-30 일
+
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 평균 속도 최고값
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-3
+                    input.form-control.text-right(type="text" value ='')
+                  .col-md-1
+                    span.line-30 Km/h 이하
+
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 평균 속도 최저값
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-3
+                    input.form-control.text-right(type="text" value ='')
+                  .col-md-1
+                    span.line-30 Km/h 이상
+
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 최고 속도
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-3
+                    input.form-control.text-right(type="text" value ='')
+                  .col-md-1
+                    span.line-30 km/h
+
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 이상 지점
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-3
+                    input.form-control.text-right(type="text" value ='')
+                  .col-md-1
+                    span.line-30 
+
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 가속도 최대값
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-3
+                    input.form-control.text-right(type="text" value ='')
+                  .col-md-1
+                    span.line-30
+
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 1회 지급 마일리지
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-3
+                    input.form-control.text-right(type="text" value ='')
+                  .col-md-1
+                    span.line-30 Point/km
+
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 일일 최대 승인 횟수
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-3
+                    input.form-control.text-right(type="text" value ='')
+                  .col-md-1
+                    span.line-30 회
+
+                .full.mrb-20
+                  .col-md-3.text-right.line-30
+                    | 1회 지급 마일리지
+                    i.fa.fa-angle-right.font-18.mrl-10(aria-hidden='true')
+                  .col-md-3
+                    input.form-control.text-right(type="text" value ='')
+                  .col-md-1
+                    span.line-30 Point/km
+
+
+
+                .full.text-center
+                  button.btn.green.pad-8-50 목록
+                  button.btn.green.pad-8-50 저장
+                    
+
+
+                    
+            //.table-member-mng
+            
+            // .block-1
+          // .member-main
+      // .page-content
+    // .member
+  //.page-container
+  
+  ="\n"
+  include ../includes/footer.jade
+  
+  ="\n"
+  include ../includes/popupConfirmDelete.jade
