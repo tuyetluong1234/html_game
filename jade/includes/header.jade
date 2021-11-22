@@ -1,26 +1,33 @@
 .header-fix
     .page-header
-      .page-header-inner.container
-        // BEGIN LOGO
-        .logo
-          a(href="main.html")
+      .container
+        .page-header-inner
+          // BEGIN LOGO
+          .logo
+            a(href="main.html")
               img(src="../../assets/images/logo/logo.png", alt='index')
-        .page-menu-inner.container
-          .cos-menu.md-full
-              ul.cos-nav-menu
-                  li
-                    a.dashboard.active(href='main.html', alt='Dashboard') 
-                      span Dashboard
-                  li
-                    a.validators(href='validators.html', alt='Validators')  
-                      span Validators
-                  li
-                    a.blocks(href='blocks.html', alt='Blocks')
-                      span Blocks
-                  li
-                    a.transactions(href='transactions.html', alt='Transactions') 
-                      span Transactions
-                  li
-                    a.votings(href='votings.html', alt='Votings') 
-                      span Votings
+          .page-menu
+            .page-menu-inner
+              .cos-menu
+                ul.cos-nav-menu
+                    li
+                      a.item-link.active(href='#', alt='Hero') 
+                        span Hero
+                    li
+                      a.item-link(href='#', alt='Item')  
+                        span Item
+                    li
+                      a.item-link(href='#', alt='Staking')
+                        span Staking
+                    li
+                      a.item-link(href='#', alt='Summon') 
+                        span Summon
+                    li
+                      a.item-link(href='#', alt='Gacha') 
+                        span Gacha
+                    li
+                      a.item-link(href='#', alt='Wallet') 
+                        span Wallet
+          .link-button-contact
+            a(href="#") Connect Wallet
 .clearfix
