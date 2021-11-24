@@ -1,43 +1,65 @@
-.sidebar-left
-  .left_col.scroll-view
-    #sidebar-menu.main_menu_side.hidden-print.main_menu
-      .menu_section
-        //- h3 General
-        ul.nav.side-menu
-          li
-            a(title="Home")
-              i.fa.fa-home
-              |  Home 
-              span.fa.fa-chevron-down
-          li
-            a
-              i.fa.fa-edit
-              |  Forms 
-              span.fa.fa-chevron-down
-          li
-            a
-              i.fa.fa-desktop
-              |  UI Elements 
-              span.fa.fa-chevron-down
-          li
-            a
-              i.fa.fa-table
-              |  Tables 
-              span.fa.fa-chevron-down
-          li
-            a
-              i.fa.fa-bar-chart-o
-              |  Data Presentation 
-              span.fa.fa-chevron-down
-          li
-            a
-              i.fa.fa-clone
-              | Layouts 
-              span.fa.fa-chevron-down
-
-    // sidebar menu
-    // /sidebar menu
-    // /menu footer buttons
-    
-    // /menu footer buttons
-// .left_col
+.page-sidebar-wrapper
+  .page-sidebar
+    .cnt-filter
+      h3 Filter
+      button.btn.btn-clear-filter Clear filter
+    .cnt-orderby
+      .title
+        |Sort buy
+      .cnt-order-buy
+        select.form-control.select2me(name='options2')
+          option(value='') Select
+          option(value='Option 1') Option 1
+          option(value='Option 2') Option 2
+          option(value='Option 3') Option 3
+          option(value='Option 4') Option 4
+    ul.page-sidebar-menu(data-keep-expanded='false', data-auto-scroll='true', data-slide-speed='200')
+      li.menu-active
+        h3.title
+          span 
+            |Races
+          span (1)
+        .list-check
+          ="\n"
+          .form-check
+            input#exampleCheck1.form-check-input(type="checkbox")
+            label.form-check-label(for="exampleCheck1" ) Poseidon
+          .form-check
+            input#exampleCheck2.form-check-input(type="checkbox")
+            label.form-check-label(for="exampleCheck2" ) Poseidon
+          .form-check
+            input#exampleCheck3.form-check-input(type="checkbox")
+            label.form-check-label(for="exampleCheck3" ) Poseidon
+          .form-check
+            input#exampleCheck4.form-check-input(type="checkbox")
+            label.form-check-label(for="exampleCheck4" ) Poseidon
+          .form-check
+            input#exampleCheck5.form-check-input(type="checkbox")
+            label.form-check-label(for="exampleCheck5" ) Poseidon
+          .form-check
+            input#exampleCheck6.form-check-input(type="checkbox")
+            label.form-check-label(for="exampleCheck6" ) Poseidon
+          .form-check
+            input#exampleCheck7.form-check-input(type="checkbox")
+            label.form-check-label(for="exampleCheck7" ) Poseidon
+      li.menu-active
+        h3
+          span.title 
+            |Collection
+        .list-check
+          ="\n"
+          .form-check
+            input#exampleCheck1.form-check-input(type="checkbox")
+            label.form-check-label(for="exampleCheck1" ) Poseidon
+          .form-check
+            input#exampleCheck2.form-check-input(type="checkbox")
+            label.form-check-label(for="exampleCheck2" ) Poseidon
+          .form-check
+            input#exampleCheck3.form-check-input(type="checkbox")
+            label.form-check-label(for="exampleCheck3" ) Poseidon
+          .form-check
+            input#exampleCheck4.form-check-input(type="checkbox")
+            label.form-check-label(for="exampleCheck4" ) Poseidon
+          ="\n"
+          
+// .page-sidebar-wrapper

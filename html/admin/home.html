@@ -51,10 +51,7 @@
         <section class="banner">
           <div class="content-block">
             <div class="cnt-hero" data-animate="ts-fadeInLeft" data-delay=".2s">
-              <div class="text-hero">heroes market</div>
-              <div class="ts-background" data-bg-parallax="scroll" data-bg-parallax-speed="3">
-                <div class="ts-background-image ts-parallax-element" data-bg-image="../../assets/images/hh02.png" data-animate="ts-zoomOutIn"></div>
-              </div>
+              <div class="text-hero"><img src="../../assets/images/hh02.png" alt="Hero"/></div>
             </div>
             <div class="blocks-status" data-animate="ts-fadeInLeft" data-delay=".2s">
               <div class="status-items">
@@ -77,37 +74,139 @@
         </section>
         <section class="list-content">
           <div class="container">
-            <div class="sidebar-left">
-              <div class="left_col scroll-view">
-                <div class="main_menu_side hidden-print main_menu" id="sidebar-menu">
-                  <div class="menu_section">
-                    <ul class="nav side-menu">
-                      <li><a title="Home"><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a></li>
-                      <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a></li>
-                      <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a></li>
-                      <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a></li>
-                      <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a></li>
-                      <li><a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a></li>
-                    </ul>
+            <div class="page-sidebar-wrapper">
+              <div class="page-sidebar">
+                <div class="cnt-filter">
+                  <h3>Filter</h3>
+                  <button class="btn btn-clear-filter">Clear filter</button>
+                </div>
+                <div class="cnt-orderby">
+                  <div class="title">Sort buy</div>
+                  <div class="cnt-order-buy">
+                    <select class="form-control select2me" name="options2">
+                      <option value="">Select</option>
+                      <option value="Option 1">Option 1</option>
+                      <option value="Option 2">Option 2</option>
+                      <option value="Option 3">Option 3</option>
+                      <option value="Option 4">Option 4</option>
+                    </select>
                   </div>
                 </div>
-                <!-- sidebar menu-->
-                <!-- /sidebar menu-->
-                <!-- /menu footer buttons-->
-                <!-- /menu footer buttons-->
+                <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                  <li class="menu-active">
+                    <h3 class="title"><span>
+                         Races</span><span>(1)</span></h3>
+                    <div class="list-check">
+
+                      <div class="form-check">
+                        <input class="form-check-input" id="exampleCheck1" type="checkbox"/>
+                        <label class="form-check-label" for="exampleCheck1">Poseidon</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="exampleCheck2" type="checkbox"/>
+                        <label class="form-check-label" for="exampleCheck2">Poseidon</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="exampleCheck3" type="checkbox"/>
+                        <label class="form-check-label" for="exampleCheck3">Poseidon</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="exampleCheck4" type="checkbox"/>
+                        <label class="form-check-label" for="exampleCheck4">Poseidon</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="exampleCheck5" type="checkbox"/>
+                        <label class="form-check-label" for="exampleCheck5">Poseidon</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="exampleCheck6" type="checkbox"/>
+                        <label class="form-check-label" for="exampleCheck6">Poseidon</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="exampleCheck7" type="checkbox"/>
+                        <label class="form-check-label" for="exampleCheck7">Poseidon</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-active">
+                    <h3><span class="title">
+                         Collection</span></h3>
+                    <div class="list-check">
+
+                      <div class="form-check">
+                        <input class="form-check-input" id="exampleCheck1" type="checkbox"/>
+                        <label class="form-check-label" for="exampleCheck1">Poseidon</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="exampleCheck2" type="checkbox"/>
+                        <label class="form-check-label" for="exampleCheck2">Poseidon</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="exampleCheck3" type="checkbox"/>
+                        <label class="form-check-label" for="exampleCheck3">Poseidon</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="exampleCheck4" type="checkbox"/>
+                        <label class="form-check-label" for="exampleCheck4">Poseidon</label>
+                      </div>
+
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
-            <!-- .left_col-->
-            <div class="content-home">
-              <div class="content-page-home">
-                <div class="cnt-img-logo"><img src="../../assets/images/janken.png" alt="menu"/></div>
-                <div class="cnt-img-title"><img src="../../assets/images/title.png" alt="menu"/></div>
-                <div class="text-bit-nft">
-                  <h3>Bit your NFTs or </h3>
-                </div>
-                <ul> 
-                  <li><a href="#">Bit NFT</a></li>
-                  <li><a href="#">Bit Token</a></li>
+            <!-- .page-sidebar-wrapper-->
+            <div class="content-wapper-page">
+              <div class="content-page">
+                <ul class="list-item">
+                  <li class="item is-content">
+                    <div class="item-content">
+                      <div class="thumbnails">
+                        <div class="thumb"><img src="../../assets/images/icon.png" alt="menu"/></div>
+                        <div class="text-name">Axie Infinity</div>
+                      </div>
+                      <div class="content">
+                        <h3 class="title"> <a href="#">Hope</a></h3>
+                        <div class="cnt-detail"><span>Owner:</span><span class="bgr-cnt">janken1gdg6scaqe...</span></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item is-content">
+                    <div class="item-content">
+                      <div class="thumbnails">
+                        <div class="thumb"><img src="../../assets/images/icon.png" alt="menu"/></div>
+                        <div class="text-name">Axie Infinity</div>
+                      </div>
+                      <div class="content">
+                        <h3 class="title"> <a href="#">Hope</a></h3>
+                        <div class="cnt-detail"><span>Owner:</span><span class="bgr-cnt">janken1gdg6scaqe...</span></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item is-content">
+                    <div class="item-content">
+                      <div class="thumbnails">
+                        <div class="thumb"><img src="../../assets/images/icon.png" alt="menu"/></div>
+                        <div class="text-name">Axie Infinity</div>
+                      </div>
+                      <div class="content">
+                        <h3 class="title"> <a href="#">Hope</a></h3>
+                        <div class="cnt-detail"><span>Owner:</span><span class="bgr-cnt">janken1gdg6scaqe...</span></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item is-content">
+                    <div class="item-content">
+                      <div class="thumbnails">
+                        <div class="thumb"><img src="../../assets/images/icon.png" alt="menu"/></div>
+                        <div class="text-name">Axie Infinity</div>
+                      </div>
+                      <div class="content">
+                        <h3 class="title"> <a href="#">Hope</a></h3>
+                        <div class="cnt-detail"><span>Owner:</span><span class="bgr-cnt">janken1gdg6scaqe...</span></div>
+                      </div>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
