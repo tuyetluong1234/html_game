@@ -73,6 +73,15 @@ img{
 				max-width: 140px;
 			}
 		}
+		ul{
+			li{
+				a{
+					&:hover,.active{
+		        color: #b0874f;
+		      }
+				}
+			}
+		}
 	}
 }
 .page-header{
@@ -123,6 +132,9 @@ img{
 	        font-weight: bold;
 	        span{
 	          margin-left: 6px;
+	        }
+	        &:hover,.active{
+	        	color: #fff;
 	        }
 	      }
 	    }
@@ -403,13 +415,16 @@ img{
 					.form-check:after{
 						display: none;
 					}
-			.form-check{
-				border-bottom: 0;
-				margin-bottom: 0;
-				.icon-fire{
-					padding-right: 10px;
-				}
-			}
+					.form-check{
+						border-bottom: 0;
+						margin-bottom: 0;
+						.icon-fire{
+							padding-right: 10px;
+						}
+						input:checked + label:after {
+							top:14px;
+						}
+					}
 				}
 			}
   		}
