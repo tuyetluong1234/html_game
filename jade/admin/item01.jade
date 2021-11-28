@@ -1,0 +1,408 @@
+extends ../layouts/master.jade
+
+append titlePage
+  title Cosmos Explore
+
+append body
+  +body(class="page home")
+
+append body-contents
+  include ../includes/header.jade
+
+  ="\n"
+  .page-content-wrapper
+    .page-content
+      section.banner
+        .content-block
+          .cnt-hero(data-animate="ts-fadeInLeft" data-delay=".2s")
+            .text-hero
+              img(src="../../assets/images/hh02.png" alt="Hero")
+          div.blocks-status(data-animate="ts-fadeInLeft" data-delay=".2s")
+            .icon-left.icon-ab
+              img(src="../../assets/images/icon-sky.png" alt="Hero")
+            div.status-items
+              .title Height
+              .number 6,307,968
+            div.status-items
+              .title Transaction
+              .number 932,401
+            div.status-items
+              .title Bonded Tokens
+              .number 70,84%
+            .icon-right.icon-ab
+              img(src="../../assets/images/icon-sky.png" alt="Hero")
+      section.list-content
+        .container
+          include ../includes/page-sidebar-left1.jade
+          .content-wapper-page
+            .content-page
+              .cnt-hero-switch
+                .list-switch
+                  .item-switch
+                    .text Your Heroes
+                    .input-check
+                      input#switch1(type="checkbox")
+                      label(for="switch1")
+                  .item-switch
+                    .text Your Offers
+                    .input-check
+                      input#switch2(type="checkbox")
+                      label(for="switch2")
+              ul.list-item
+                li.item.item-blue
+                  .item-content
+                    .thumbnails
+                      .thumb
+                        .img-nv
+                          img( src="../../assets/images/nv1.png" alt="menu")
+                        .img-circle
+                          img( src="../../assets/images/ic-cc-blue.png" alt="menu")
+                      .cnt-text-thumb
+                        .cnt-thumb-top
+                          .id-cnt #1250
+                          h3 Epic
+                    .content
+                      .cnt-level-top
+                        .list-helmet
+                          .item-hel 
+                            span Serenity
+                          .item-hel 
+                            span Type: Headgear
+                          .item-hel 
+                            span Helmet
+                          .item-hel 
+                            span Level: 10
+                      .cnt-bottom
+                        .cnt-tau
+                          .icon
+                            img( src="../../assets/images/bitcon.png" alt="menu")
+                          span.text 12 TAU
+                          .cnt-dolar =  $16.234
+                li.item.item-green
+                  .item-content
+                    .thumbnails
+                      .thumb
+                        .img-nv
+                          img( src="../../assets/images/nv2.png" alt="menu")
+                        .img-circle
+                          img( src="../../assets/images/ic-cc-blue.png" alt="menu")
+                      .cnt-text-thumb
+                        .cnt-thumb-top
+                          .id-cnt #1250
+                          h3 Epic
+                    .content
+                      .cnt-level-top
+                        .list-helmet
+                          .item-hel 
+                            span Serenity
+                          .item-hel 
+                            span Type: Headgear
+                          .item-hel 
+                            span Helmet
+                          .item-hel 
+                            span Level: 10
+                      .cnt-bottom
+                        .cnt-tau
+                          .icon
+                            img( src="../../assets/images/bitcon.png" alt="menu")
+                          span.text 12 TAU
+                          .cnt-dolar =  $16.234
+                li.item.item-yellow
+                    .item-content
+                      .thumbnails
+                        .thumb
+                          .img-nv
+                            img( src="../../assets/images/nv3.png" alt="menu")
+                          .img-circle
+                            img( src="../../assets/images/ic-cc-blue.png" alt="menu")
+                        .cnt-text-thumb
+                          .cnt-thumb-top
+                            .id-cnt #1250
+                            h3 Epic
+                      .content
+                        .cnt-level-top
+                          .list-helmet
+                            .item-hel 
+                                span Serenity
+                            .item-hel 
+                                span Type: Headgear
+                            .item-hel 
+                                span Helmet
+                            .item-hel 
+                                span Level: 10
+                        .cnt-bottom
+                          .cnt-tau
+                            .icon
+                              img( src="../../assets/images/bitcon.png" alt="menu")
+                            span.text 12 TAU
+                            .cnt-dolar =  $16.234
+                li.item.item-blue
+                  .item-content
+                    .thumbnails
+                      .thumb
+                        .img-nv
+                          img( src="../../assets/images/nv1.png" alt="menu")
+                        .img-circle
+                          img( src="../../assets/images/ic-cc-blue.png" alt="menu")
+                      .cnt-text-thumb
+                        .cnt-thumb-top
+                          .id-cnt #1250
+                          h3 Epic
+                    .content
+                      .cnt-level-top
+                        .list-helmet
+                          .item-hel 
+                            span Serenity
+                          .item-hel 
+                            span Type: Headgear
+                          .item-hel 
+                            span Helmet
+                          .item-hel 
+                            span Level: 10
+                      .cnt-bottom
+                        .cnt-tau
+                          .icon
+                            img( src="../../assets/images/bitcon.png" alt="menu")
+                          span.text 12 TAU
+                          .cnt-dolar =  $16.234
+                li.item.item-green
+                  .item-content
+                    .thumbnails
+                      .thumb
+                        .img-nv
+                          img( src="../../assets/images/nv2.png" alt="menu")
+                        .img-circle
+                          img( src="../../assets/images/ic-cc-blue.png" alt="menu")
+                      .cnt-text-thumb
+                        .cnt-thumb-top
+                          .id-cnt #1250
+                          h3 Epic
+                    .content
+                      .cnt-level-top
+                        .list-helmet
+                          .item-hel 
+                            span Serenity
+                          .item-hel 
+                            span Type: Headgear
+                          .item-hel 
+                            span Helmet
+                          .item-hel 
+                            span Level: 10
+                      .cnt-bottom
+                        .cnt-tau
+                          .icon
+                            img( src="../../assets/images/bitcon.png" alt="menu")
+                          span.text 12 TAU
+                          .cnt-dolar =  $16.234
+                li.item.item-yellow
+                    .item-content
+                      .thumbnails
+                        .thumb
+                          .img-nv
+                            img( src="../../assets/images/nv3.png" alt="menu")
+                          .img-circle
+                            img( src="../../assets/images/ic-cc-blue.png" alt="menu")
+                        .cnt-text-thumb
+                          .cnt-thumb-top
+                            .id-cnt #1250
+                            h3 Epic
+                      .content
+                        .cnt-level-top
+                          .list-helmet
+                            .item-hel 
+                                span Serenity
+                            .item-hel 
+                                span Type: Headgear
+                            .item-hel 
+                                span Helmet
+                            .item-hel 
+                                span Level: 10
+                        .cnt-bottom
+                          .cnt-tau
+                            .icon
+                              img( src="../../assets/images/bitcon.png" alt="menu")
+                            span.text 12 TAU
+                            .cnt-dolar =  $16.234
+                li.item.item-blue
+                  .item-content
+                    .thumbnails
+                      .thumb
+                        .img-nv
+                          img( src="../../assets/images/nv1.png" alt="menu")
+                        .img-circle
+                          img( src="../../assets/images/ic-cc-blue.png" alt="menu")
+                      .cnt-text-thumb
+                        .cnt-thumb-top
+                          .id-cnt #1250
+                          h3 Epic
+                    .content
+                      .cnt-level-top
+                        .list-helmet
+                          .item-hel 
+                            span Serenity
+                          .item-hel 
+                            span Type: Headgear
+                          .item-hel 
+                            span Helmet
+                          .item-hel 
+                            span Level: 10
+                      .cnt-bottom
+                        .cnt-tau
+                          .icon
+                            img( src="../../assets/images/bitcon.png" alt="menu")
+                          span.text 12 TAU
+                          .cnt-dolar =  $16.234
+                li.item.item-green
+                  .item-content
+                    .thumbnails
+                      .thumb
+                        .img-nv
+                          img( src="../../assets/images/nv2.png" alt="menu")
+                        .img-circle
+                          img( src="../../assets/images/ic-cc-blue.png" alt="menu")
+                      .cnt-text-thumb
+                        .cnt-thumb-top
+                          .id-cnt #1250
+                          h3 Epic
+                    .content
+                      .cnt-level-top
+                        .list-helmet
+                          .item-hel 
+                            span Serenity
+                          .item-hel 
+                            span Type: Headgear
+                          .item-hel 
+                            span Helmet
+                          .item-hel 
+                            span Level: 10
+                      .cnt-bottom
+                        .cnt-tau
+                          .icon
+                            img( src="../../assets/images/bitcon.png" alt="menu")
+                          span.text 12 TAU
+                          .cnt-dolar =  $16.234
+                li.item.item-yellow
+                    .item-content
+                      .thumbnails
+                        .thumb
+                          .img-nv
+                            img( src="../../assets/images/nv3.png" alt="menu")
+                          .img-circle
+                            img( src="../../assets/images/ic-cc-blue.png" alt="menu")
+                        .cnt-text-thumb
+                          .cnt-thumb-top
+                            .id-cnt #1250
+                            h3 Epic
+                      .content
+                        .cnt-level-top
+                          .list-helmet
+                            .item-hel 
+                                span Serenity
+                            .item-hel 
+                                span Type: Headgear
+                            .item-hel
+                                span Helmet
+                            .item-hel 
+                                span Level: 10
+                        .cnt-bottom
+                          .cnt-tau
+                            .icon
+                              img( src="../../assets/images/bitcon.png" alt="menu")
+                            span.text 12 TAU
+                            .cnt-dolar =  $16.234
+                li.item.item-blue
+                  .item-content
+                    .thumbnails
+                      .thumb
+                        .img-nv
+                          img( src="../../assets/images/nv1.png" alt="menu")
+                        .img-circle
+                          img( src="../../assets/images/ic-cc-blue.png" alt="menu")
+                      .cnt-text-thumb
+                        .cnt-thumb-top
+                          .id-cnt #1250
+                          h3 Epic
+                    .content
+                      .cnt-level-top
+                        .list-helmet
+                          .item-hel 
+                            span Serenity
+                          .item-hel 
+                            span Type: Headgear
+                          .item-hel 
+                            span Helmet
+                          .item-hel 
+                            span Level: 10
+                      .cnt-bottom
+                        .cnt-tau
+                          .icon
+                            img( src="../../assets/images/bitcon.png" alt="menu")
+                          span.text 12 TAU
+                          .cnt-dolar =  $16.234
+                li.item.item-green
+                  .item-content
+                    .thumbnails
+                      .thumb
+                        .img-nv
+                          img( src="../../assets/images/nv2.png" alt="menu")
+                        .img-circle
+                          img( src="../../assets/images/ic-cc-blue.png" alt="menu")
+                      .cnt-text-thumb
+                        .cnt-thumb-top
+                          .id-cnt #1250
+                          h3 Epic
+                    .content
+                      .cnt-level-top
+                        .list-helmet
+                          .item-hel 
+                            span Serenity
+                          .item-hel 
+                            span Type: Headgear
+                          .item-hel 
+                            span Helmet
+                          .item-hel 
+                            span Level: 10
+                      .cnt-bottom
+                        .cnt-tau
+                          .icon
+                            img( src="../../assets/images/bitcon.png" alt="menu")
+                          span.text 12 TAU
+                          .cnt-dolar =  $16.234
+                li.item.item-yellow
+                    .item-content
+                      .thumbnails
+                        .thumb
+                          .img-nv
+                            img( src="../../assets/images/nv3.png" alt="menu")
+                          .img-circle
+                            img( src="../../assets/images/ic-cc-blue.png" alt="menu")
+                        .cnt-text-thumb
+                          .cnt-thumb-top
+                            .id-cnt #1250
+                            h3 Epic
+                      .content
+                        .cnt-level-top
+                          .list-helmet
+                            .item-hel 
+                                span Serenity
+                            .item-hel 
+                                span Type: Headgear
+                            .item-hel 
+                                span Helmet
+                            .item-hel 
+                                span Level: 10
+                        .cnt-bottom
+                          .cnt-tau
+                            .icon
+                              img( src="../../assets/images/bitcon.png" alt="menu")
+                            span.text 12 TAU
+                            .cnt-dolar =  $16.234
+                                                 
+                     
+          // .member-main
+    // .page-content
+  // .member
+  //.page-container
+  ="\n"
+  include ../includes/footer.jade
+  ="\n"
