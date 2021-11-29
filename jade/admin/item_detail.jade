@@ -21,20 +21,21 @@ append body-contents
                   .back-link
                     a(href="#")
                       .icon
-                        img(src="../../assets/images/fire.png" alt="Hero")
+                        img(src="../../assets/images/icon-back.png" alt="Hero")
                       span Back
-                .cnt-balance
-                  span.title
-                    |balance
-                  span.number 0
-                .cnt-title-character
-                  h3 Serenity helmet
-                .thumbnails
-                  .thumb
-                    .img-nv
-                      img( src="../../assets/images/nv1.png" alt="menu")
-                    .img-circle
-                      img( src="../../assets/images/ic-cc-blue.png" alt="menu")
+                  .balance-cnt
+                    .cnt-balance
+                      span.title
+                        |balance
+                      span.number 0
+                  .cnt-title-character
+                    h3 Serenity helmet
+                  .thumbnails
+                    .thumb
+                      .img-nv
+                        img( src="../../assets/images/nv1.png" alt="menu")
+                      .img-circle
+                        img( src="../../assets/images/ic-cc-blue.png" alt="menu")
 
               .col-md-7
                 .content-right
@@ -49,22 +50,23 @@ append body-contents
                           span.text 12 TAU
                           .cnt-dolar =  $16.234
                       .cnt-right
-                        button.btn.btn-clear-filter Clear filter
-                    div.blocks-status(data-animate="ts-fadeInLeft" data-delay=".2s")
-                      div.status-items
-                        .title Height
-                        .number 6,307,968
-                      div.status-items
-                        .title Transaction
-                        .number 932,401
-                      div.status-items
-                        .title Bonded Tokens
-                        .number 70,84%
+                        button.btn.btn-clear-filter Buy now
+                    .contet-center-status
+                      .blocks-status(data-animate="ts-fadeInLeft" data-delay=".2s")
+                        div.status-items
+                          .title level
+                          .sub-title 12
+                        div.status-items
+                          .title Type
+                          .sub-title.blue.bold Head gear
+                        div.status-items
+                          .title Rarity
+                          .sub-title Common
                     .cnt-infor-character
                       .cnt-infor
                         .title-top
                           h3
-                            status
+                            |status
                             span.number (56 
                             span.green +11)
                         .cnt-detail-chara
