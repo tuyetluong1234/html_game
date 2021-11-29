@@ -912,6 +912,7 @@ img{
   position: relative;
   .content-detail{
   	padding-top: 180px;
+  	padding-bottom: 100px;
   	.content-left{
   		.back-link{
   			max-width: 160px;
@@ -1106,16 +1107,61 @@ img{
   				}
   				.cnt-detail-chara{
   					.list-level{
+  						padding: 20px;
   						ul{
   							display: flex;
+  							margin-bottom: 0;
 	  						li{
 	  							width: 25%;
-
+	  							.cnt-item-level{
+	  								display: flex;
+								    justify-content: flex-start;
+								    align-items: center;
+								    color: #fff;
+	  								.icon{
+	  									padding-right: 7px;
+	  								}
+	  							}
 	  						}
+  						}
+  					}
+  					.list-infor{
+  						padding: 40px;
+  						.item-infor{
+  							margin-bottom: 20px;
+  							color: #fff;
+  							h4{
+  								font-size: 20px;
+  								color:#16cffb;
+  								margin: 0;
+  								line-height:1.4;
+  							}
+  							ul{
+  								margin-bottom: 0;
+  							}
   						}
   					}
   				}
   				
+  			}
+  		}
+  	}
+  }
+  .content-list-table{
+  	padding-top: 100px;
+  	border-top:1px solid #fff;
+  	.cnt-table{
+  		.table{
+  			tr{
+  				td,th{
+  						background-color: rgba(22,207,251,0.28);
+  						color: #fff;
+  					}
+  				&:hover{
+  					td,th{
+  						background-color: rgba(22,207,251,0.37);
+  					}
+  				}
   			}
   		}
   	}

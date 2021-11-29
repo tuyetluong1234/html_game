@@ -1818,6 +1818,7 @@ img {
 }
 .page-detail .content-detail {
   padding-top: 180px;
+  padding-bottom: 100px;
 }
 .page-detail .content-detail .content-left .back-link {
   max-width: 160px;
@@ -2035,13 +2036,61 @@ img {
 .page-detail .content-detail .content-right .cnt-detail-top .cnt-infor-character .cnt-infor .title-top h3 span.green {
   color: #41dd28;
 }
+.page-detail .content-detail .content-right .cnt-detail-top .cnt-infor-character .cnt-detail-chara .list-level {
+  padding: 20px;
+}
 .page-detail .content-detail .content-right .cnt-detail-top .cnt-infor-character .cnt-detail-chara .list-level ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 0;
 }
 .page-detail .content-detail .content-right .cnt-detail-top .cnt-infor-character .cnt-detail-chara .list-level ul li {
   width: 25%;
+}
+.page-detail .content-detail .content-right .cnt-detail-top .cnt-infor-character .cnt-detail-chara .list-level ul li .cnt-item-level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+}
+.page-detail .content-detail .content-right .cnt-detail-top .cnt-infor-character .cnt-detail-chara .list-level ul li .cnt-item-level .icon {
+  padding-right: 7px;
+}
+.page-detail .content-detail .content-right .cnt-detail-top .cnt-infor-character .cnt-detail-chara .list-infor {
+  padding: 40px;
+}
+.page-detail .content-detail .content-right .cnt-detail-top .cnt-infor-character .cnt-detail-chara .list-infor .item-infor {
+  margin-bottom: 20px;
+  color: #fff;
+}
+.page-detail .content-detail .content-right .cnt-detail-top .cnt-infor-character .cnt-detail-chara .list-infor .item-infor h4 {
+  font-size: 20px;
+  color: #16cffb;
+  margin: 0;
+  line-height: 1.4;
+}
+.page-detail .content-detail .content-right .cnt-detail-top .cnt-infor-character .cnt-detail-chara .list-infor .item-infor ul {
+  margin-bottom: 0;
+}
+.page-detail .content-list-table {
+  padding-top: 100px;
+  border-top: 1px solid #fff;
+}
+.page-detail .content-list-table .cnt-table .table tr td,
+.page-detail .content-list-table .cnt-table .table tr th {
+  background-color: rgba(22, 207, 251, 0.28);
+  color: #fff;
+}
+.page-detail .content-list-table .cnt-table .table tr:hover td,
+.page-detail .content-list-table .cnt-table .table tr:hover th {
+  background-color: rgba(22, 207, 251, 0.37);
 }
 @media (min-width: 1200px) {
   .container {
