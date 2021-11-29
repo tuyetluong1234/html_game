@@ -1,0 +1,110 @@
+extends ../layouts/master.jade
+
+append titlePage
+  title Cosmos Explore
+
+append body
+  +body(class="page home")
+
+append body-contents
+  .page-detail
+    include ../includes/header.jade
+
+    ="\n"
+    .page-content-wrapper
+      .page-content
+        .content-detail
+          .row
+            .col-md-5
+              .content-left
+                .back-link
+                  a(href="#")
+                    .icon
+                      img(src="../../assets/images/fire.png" alt="Hero")
+                    span Back
+              .cnt-balance
+                span.title
+                  |balance
+                span.number 0
+              .cnt-title-character
+                h3 Serenity helmet
+              .thumbnails
+                .thumb
+                  .img-nv
+                    img( src="../../assets/images/nv1.png" alt="menu")
+                  .img-circle
+                    img( src="../../assets/images/ic-cc-blue.png" alt="menu")
+
+            .col-md-7
+              .content-right
+                .cnt-detail-top
+                  .cnt-top
+                    .cnt-left
+                      .id-cnt #1250
+                    .cnt-center
+                      .cnt-tau
+                        .icon
+                          img( src="../../assets/images/bitcon.png" alt="menu")
+                        span.text 12 TAU
+                        .cnt-dolar =  $16.234
+                    .cnt-right
+                      button.btn.btn-clear-filter Clear filter
+                  div.blocks-status(data-animate="ts-fadeInLeft" data-delay=".2s")
+                    div.status-items
+                      .title Height
+                      .number 6,307,968
+                    div.status-items
+                      .title Transaction
+                      .number 932,401
+                    div.status-items
+                      .title Bonded Tokens
+                      .number 70,84%
+                  .cnt-infor-character
+                    .cnt-infor
+                      .title-top
+                        h3
+                          status
+                          span.number (56 
+                          span.green +11)
+                      .cnt-detail-chara
+                        .list-level
+                          ul
+                            li
+                              .cnt-item-level
+                                .icon
+                                .cnt 
+                                  span Attack:12
+                                  span.green +11
+                            li
+                              .cnt-item-level
+                                .icon
+                                .cnt 
+                                  span HP:12
+                                  span.green +11
+                            li
+                              .cnt-item-level
+                                .icon
+                                .cnt 
+                                  span DEF:12
+                                  span.green +11
+                            li
+                              .cnt-item-level
+                                .icon
+                                .cnt 
+                                  span DEF:12
+                                  span.green +11
+                        .list-infor
+                          .item-infor
+                            h4 Item set Bonus:
+                            ul
+                              li 
+
+
+
+      
+    // .page-content
+  // .member
+  //.page-container
+  ="\n"
+  include ../includes/footer.jade
+  ="\n"

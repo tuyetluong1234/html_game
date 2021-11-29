@@ -10,8 +10,13 @@
         .dropdown
           .select 
             span Lowest Price
-            i.fa.fa-sort-desc 
-          
+            i.fa.fa-caret-down 
+            i.fa.fa-caret-up
+          <input type="hidden" name="gender">
+          <ul class="dropdown-menu">
+            <li id="male">Male</li>
+            <li id="female">Female</li>
+          </ul>
     ul.page-sidebar-menu(data-keep-expanded='false', data-auto-scroll='true', data-slide-speed='200')
       li.menu-active
         h3.title
