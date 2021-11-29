@@ -1807,6 +1807,15 @@ img {
   -webkit-box-shadow: 0 0 15px #fca51e;
   box-shadow: 0 0 15px #fca51e;
 }
+.page-detail {
+  background-image: url(../../assets/images/bgr_home.png);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: gray;
+  min-height: 100vh;
+  position: relative;
+}
 @media (min-width: 1200px) {
   .container {
     max-width: 1460px;
