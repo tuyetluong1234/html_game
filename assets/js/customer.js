@@ -103,13 +103,49 @@
         });
     /*End Dropdown Menu*/
 
+    $('.dropdown-menu li').click(function () {
+      var input = '<strong>' + $(this).parents('.dropdown').find('input').val() + '</strong>',
+          msg = '<span class="msg">Hidden input value: ';
+      $('.msg').html(msg + input + '</span>');
+        }); 
+    });
 
-        $('.dropdown-menu li').click(function () {
-          var input = '<strong>' + $(this).parents('.dropdown').find('input').val() + '</strong>',
-              msg = '<span class="msg">Hidden input value: ';
-          $('.msg').html(msg + input + '</span>');
-            }); 
+    var icon_menu = document.querySelector(".burger");
+    var mobi_overlay = document.querySelector(".mobi-overlay");
+    var menu_section = document.querySelector(".page-menu");
+    var html = document.querySelector("html");
+    var item = document.querySelectorAll(".page-header .page-menu .cos-nav-menu li")
+    document.querySelector(".mobi-overlay").addEventListener("click", (e) => { 
+        mobi_overlay.classList.remove("show");
+        menu_section.style.left = "-300px";
+        html.classList.remove("disable-scroll");
+    });
+    document.querySelector(".burger").addEventListener("click", (e) => { ;
+        mobi_overlay.classList.add("show");
+        menu_section.style.left = "0";
+        html.classList.add("disable-scroll");
+    });
+    for(i = 0; i < item.length; i++){
+        item[i].addEventListener("click", (e) => { 
+            mobi_overlay.classList.remove("show");
+            menu_section.style.left = "-300px";
+            html.classList.remove("disable-scroll");
         });
+    }
+    var icon_menu = document.querySelector(".burgers");
+    var mobi_overlays = document.querySelector(".mobi-overlay");
+    var menu_sections = document.querySelector(".cnt-oder-sidebar");
+    var html = document.querySelector("html");
+    document.querySelector(".mobi-overlay").addEventListener("click", (e) => { 
+        mobi_overlays.classList.remove("show");
+        menu_sections.style.left = "-340px";
+        html.classList.remove("disable-scroll");
+    });
+    document.querySelector(".burgers").addEventListener("click", (e) => { ;
+        mobi_overlays.classList.add("show");
+        menu_sections.style.left = "0";
+        html.classList.add("disable-scroll");
+    });
 })(jQuery);
 
   

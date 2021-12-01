@@ -22,6 +22,9 @@
     <div class="page-detail">
       <div class="header-fix">
         <div class="page-header">
+          <div class="mobi-overlay">
+            <div class="close"></div>
+          </div>
           <div class="container">
             <div class="page-header-inner">
               <!-- BEGIN LOGO-->
@@ -40,7 +43,11 @@
                   </div>
                 </div>
               </div>
-              <div class="link-button-contact"><a href="#">Connect Wallet</a></div>
+              <div class="link-button-contact"><a href="#">Connect Wallet</a></div><button type="button" class="burger" id="burger">
+<span class="burger-line"></span>
+<span class="burger-line"></span>
+<span class="burger-line"></span>
+</button>
             </div>
           </div>
         </div>
@@ -178,7 +185,7 @@
           </div>
           <div class="content-list-table">
             <div class="container">
-              <div class="table-top">
+              <div class="item-table">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="cnt-table">
@@ -203,7 +210,7 @@
                                 <td class="text-center">2.000 TAU</td>
                                 <td class="text-center">4 month ago</td>
                                 <td> 
-                                  <button class="btn btn-accept">Accept</button>
+                                  <button class="btn btn-accept" data-toggle="modal" data-target="#popupsellItem">Accept</button>
                                 </td>
                               </tr>
                               <tr>
@@ -229,6 +236,275 @@
                                 <td> 
                                   <button class="btn btn-accept">Accept</button>
                                 </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="cnt-table">
+                      <div class="title-table">
+                        <h3>offers</h3>
+                        <button class="btn btn-clear-filter">make offer</button>
+                      </div>
+                      <div class="cnt-table-responsive">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>From</th>
+                                <th>price</th>
+                                <th>date</th>
+                                <th> </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="text-center">0xb8...cc33</td>
+                                <td class="text-center">2.000 TAU</td>
+                                <td class="text-center">4 month ago</td>
+                                <td> 
+                                  <button class="btn btn-accept" data-toggle="modal" data-target="#popupsellItem1">Accept</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">0xb8...cc33</td>
+                                <td class="text-center">2.000 TAU</td>
+                                <td class="text-center">4 month ago</td>
+                                <td> 
+                                  <button class="btn btn-accept">Accept</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">0xb8...cc33</td>
+                                <td class="text-center">2.000 TAU</td>
+                                <td class="text-center">4 month ago</td>
+                                <td> 
+                                  <button class="btn btn-accept">Accept</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">0xb8...cc33</td>
+                                <td class="text-center">2.000 TAU</td>
+                                <td class="text-center">4 month ago</td>
+                                <td> 
+                                  <button class="btn btn-accept">Accept</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-table">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="cnt-table">
+                      <div class="title-table">
+                        <h3>exchanges</h3>
+                      </div>
+                      <div class="cnt-table-responsive">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>From</th>
+                                <th>amount</th>
+                                <th>rule</th>
+                                <th>date</th>
+                                <th> </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="text-center">0xb8...cc33</td>
+                                <td>1</td>
+                                <td class="text-center">
+                                  <div class="cnt-box-rule">
+                                    <div class="list-item-rule">
+                                      <div class="item-rule">
+                                        <div class="icon"></div>
+                                      </div>
+                                      <div class="item-rule"><i class="fa fa-exchange"></i></div>
+                                      <div class="item-rule">
+                                        <div class="icon"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="text-center">4 month ago</td>
+                                <td> 
+                                  <button class="btn btn-accept">Accept</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">0xb8...cc33</td>
+                                <td>1</td>
+                                <td class="text-center">
+                                  <div class="cnt-box-rule">
+                                    <div class="list-item-rule">
+                                      <div class="item-rule">
+                                        <div class="icon"></div>
+                                      </div>
+                                      <div class="item-rule"><i class="fa fa-exchange"></i></div>
+                                      <div class="item-rule">
+                                        <div class="icon"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="text-center">4 month ago</td>
+                                <td> 
+                                  <button class="btn btn-accept">Accept</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">0xb8...cc33</td>
+                                <td>1</td>
+                                <td class="text-center">
+                                  <div class="cnt-box-rule">
+                                    <div class="list-item-rule">
+                                      <div class="item-rule">
+                                        <div class="icon"></div>
+                                      </div>
+                                      <div class="item-rule"><i class="fa fa-exchange"></i></div>
+                                      <div class="item-rule">
+                                        <div class="icon"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="text-center">4 month ago</td>
+                                <td> 
+                                  <button class="btn btn-accept">Accept</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">0xb8...cc33</td>
+                                <td>1</td>
+                                <td class="text-center">
+                                  <div class="cnt-box-rule">
+                                    <div class="list-item-rule">
+                                      <div class="item-rule">
+                                        <div class="icon"></div>
+                                      </div>
+                                      <div class="item-rule"><i class="fa fa-exchange"></i></div>
+                                      <div class="item-rule">
+                                        <div class="icon"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="text-center">4 month ago</td>
+                                <td> 
+                                  <button class="btn btn-accept">Accept</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">0xb8...cc33</td>
+                                <td>1</td>
+                                <td class="text-center">
+                                  <div class="cnt-box-rule">
+                                    <div class="list-item-rule">
+                                      <div class="item-rule">
+                                        <div class="icon"></div>
+                                      </div>
+                                      <div class="item-rule"><i class="fa fa-exchange"></i></div>
+                                      <div class="item-rule">
+                                        <div class="icon"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="text-center">4 month ago</td>
+                                <td> 
+                                  <button class="btn btn-accept">Accept</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-table">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="cnt-table">
+                      <div class="title-table">
+                        <h3>transaction history</h3>
+                      </div>
+                      <div class="cnt-table-responsive">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Event</th>
+                                <th>From</th>
+                                <th>to</th>
+                                <th>price</th>
+                                <th>date </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input class="form-check-input" id="exampleChecktb" type="checkbox"/>
+                                    <label class="form-check-label" for="exampleChecktb">offer</label>
+                                  </div>
+                                </td>
+                                <td class="text-center">0xb8...cc33</td>
+                                <td>1</td>
+                                <td>
+                                   2,000 Tau</td>
+                                <td class="text-center">4 month ago</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input class="form-check-input" id="exampleChecktb1" type="checkbox"/>
+                                    <label class="form-check-label" for="exampleChecktb1">List</label>
+                                  </div>
+                                </td>
+                                <td class="text-center">0xb8...cc33</td>
+                                <td>1</td>
+                                <td>
+                                   2,000 Tau</td>
+                                <td class="text-center">4 month ago</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input class="form-check-input" id="exampleChecktb2" type="checkbox"/>
+                                    <label class="form-check-label" for="exampleChecktb2">offer</label>
+                                  </div>
+                                </td>
+                                <td class="text-center">0xb8...cc33</td>
+                                <td>1</td>
+                                <td>
+                                   2,000 Tau</td>
+                                <td class="text-center">4 month ago</td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-check">
+                                    <input class="form-check-input" id="exampleChecktb3" type="checkbox"/>
+                                    <label class="form-check-label" for="exampleChecktb3">List</label>
+                                  </div>
+                                </td>
+                                <td class="text-center">0xb8...cc33</td>
+                                <td>1</td>
+                                <td>
+                                   2,000 Tau</td>
+                                <td class="text-center">4 month ago</td>
                               </tr>
                             </tbody>
                           </table>
@@ -276,6 +552,61 @@
       </div>
     </div>
 
+    <div class="modal fade" id="popupsellItem" tabindex="-1" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Sell Item</h3>
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">x</button>
+          </div>
+          <div class="modal-body">
+            <h4>Are you sure to Sell this Serenity Helmet with</h4>
+            <div class="number-tau"> 
+              <h5>0,79999 TAU</h5>
+            </div>
+            <div class="cnt-view-tau"><span class="title">Current balance:</span><span class="tau">o Tau</span>
+              <!-- Are you sure you want to delete?-->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+            <button class="btn red btn-confirm">Sell</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .popupConfirmDelete-->
+
+    <div class="modal fade" id="popupsellItem1" tabindex="-1" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Take Offer</h3>
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">x</button>
+          </div>
+          <div class="modal-body">
+            <h4>Are you sure yo want to exchange these items from your inventory for 1 <span>Cheetare Gloves?</span></h4>
+            <div class="cnt-cheetara">
+              <div class="text-from">From(1)</div>
+              <div class="box"><span class="ract"></span></div>
+              <div class="text-to">To</div>
+              <div class="box-cnt-text">
+                <div class="cnt-left">01</div>
+                <div class="cnt-center">Cheetara Gloves</div>
+                <div class="cnt-right"> 
+                  <div class="box"><span class="ract"></span><span class="text">x1</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+            <button class="btn red btn-confirm">ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .popupConfirmDelete-->
 
     <!-- Vendor jQuery (CORE PLUGINS - METRONIC)-->
     <script type="text/javascript" src="../../assets/js/jquery.min.js"></script>

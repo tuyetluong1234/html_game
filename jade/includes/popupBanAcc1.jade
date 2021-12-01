@@ -1,0 +1,26 @@
+#popupsellItem1.modal.fade(tabindex='-1', aria-hidden='true', data-backdrop="static" data-keyboard="false")
+  .modal-dialog
+    .modal-content
+      .modal-header
+        h3 Take Offer
+        button.close(type='button', data-dismiss='modal', aria-hidden='true') x
+      .modal-body
+        h4
+          |Are you sure yo want to exchange these items from your inventory for 1 
+          span Cheetare Gloves?
+        .cnt-cheetara
+          .text-from From(1)
+          div.box
+            span.ract
+          .text-to To
+          .box-cnt-text
+            .cnt-left 01
+            .cnt-center Cheetara Gloves
+            .cnt-right 
+              div.box
+                span.ract
+                span.text x1
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Close
+        button.btn.red.btn-confirm ok
+// .popupConfirmDelete
