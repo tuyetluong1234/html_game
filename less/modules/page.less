@@ -169,6 +169,7 @@ img{
 		    width: 55%;
 		    transform: translateX(-50%);
 		  .cnt-hero{
+		  	padding-bottom: 20px;
 		  	.text-hero{
 		  		max-width: 50%;
 			    height: 250px;
@@ -601,7 +602,9 @@ img{
   				margin-top: -25px;
   			}
   			.item-switch{
-  				padding-left:40px;
+  				&:not(:first-child){
+  					padding-left:40px;
+  				}
   				.text{
   					font-size: 18px;
   					line-height: 1.2;

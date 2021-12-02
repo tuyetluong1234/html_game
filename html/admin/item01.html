@@ -57,10 +57,10 @@
       <div class="page-content">
         <section class="banner">
           <div class="content-block">
-            <div class="cnt-hero" data-animate="ts-fadeInLeft" data-delay=".2s">
+            <div class="cnt-hero" data-animate="ts-fadeInDown" data-delay=".2s">
               <div class="text-hero"><img src="../../assets/images/hh02.png" alt="Hero"/></div>
             </div>
-            <div class="blocks-status" data-animate="ts-fadeInLeft" data-delay=".2s">
+            <div class="blocks-status" data-animate="ts-fadeInUp" data-delay=".2s">
               <div class="icon-left icon-ab"><img src="../../assets/images/icon-sky.png" alt="Hero"/></div>
               <div class="status-items">
                 <div class="title">Height</div>
@@ -82,177 +82,189 @@
           <div class="container">
             <div class="page-sidebar-wrapper">
               <div class="page-sidebar">
-                <div class="cnt-filter">
-                  <h3>Filter</h3>
-                  <button class="btn btn-clear-filter">Clear filter</button>
+                <div class="cnt-mobile-filter" data-animate="ts-fadeInLeft" data-delay=".2s"><button type="button" class="burgers" id="burger">
+<span class="burger-line"></span>
+<span class="burger-line"></span>
+<span class="burger-line"></span>
+</button>
+                  <div class="cnt-filter">
+                    <h3>Filter</h3>
+                    <button class="btn btn-clear-filter">Clear filter</button>
+                  </div>
                 </div>
-                <div class="cnt-orderby">
-                  <div class="title">Sort buy</div>
-                  <div class="cnt-order-buy">
-                    <div class="dropdown">
-                      <div class="select"> <span>Lowest Price</span><i class="fa fa-caret-down"> </i><i class="fa fa-caret-up"></i></div><input type="hidden" name="gender">
+                <div class="cnt-oder-sidebar">
+                  <div class="cnt-filter" data-animate="ts-fadeInLeft" data-delay=".2s">
+                    <h3>Filter</h3>
+                    <button class="btn btn-clear-filter">Clear filter</button>
+                  </div>
+                  <div class="cnt-orderby" data-animate="ts-fadeInLeft" data-delay=".2s">
+                    <div class="title">Sort buy</div>
+                    <div class="cnt-order-buy">
+                      <div class="dropdown">
+                        <div class="select"> <span>Lowest Price</span><i class="fa fa-caret-down"> </i><i class="fa fa-caret-up"></i></div><input type="hidden" name="gender">
 <ul class="dropdown-menu">
 <li id="male">Male</li>
 <li id="female">Female</li>
 </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
-                  <li class="menu-active">
-                    <h3 class="title"><span>
-                         Races</span><span>(1)</span></h3>
-                    <div class="list-check">
+                  <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" data-animate="ts-fadeInLeft" data-delay=".2s">
+                    <li class="menu-active">
+                      <h3 class="title"><span>
+                           Races</span><span>(1)</span></h3>
+                      <div class="list-check">
 
-                      <div class="form-check">
-                        <input class="form-check-input" id="exampleCheck1" type="checkbox"/>
-                        <label class="form-check-label" for="exampleCheck1">Poseidon</label>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleCheck1" type="checkbox"/>
+                          <label class="form-check-label" for="exampleCheck1">Poseidon</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleCheck2" type="checkbox"/>
+                          <label class="form-check-label" for="exampleCheck2">Poseidon</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleCheck3" type="checkbox"/>
+                          <label class="form-check-label" for="exampleCheck3">Poseidon</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleCheck4" type="checkbox"/>
+                          <label class="form-check-label" for="exampleCheck4">Poseidon</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleCheck5" type="checkbox"/>
+                          <label class="form-check-label" for="exampleCheck5">Poseidon</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleCheck6" type="checkbox"/>
+                          <label class="form-check-label" for="exampleCheck6">Poseidon</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleCheck7" type="checkbox"/>
+                          <label class="form-check-label" for="exampleCheck7">Poseidon</label>
+                        </div>
                       </div>
-                      <div class="form-check">
-                        <input class="form-check-input" id="exampleCheck2" type="checkbox"/>
-                        <label class="form-check-label" for="exampleCheck2">Poseidon</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" id="exampleCheck3" type="checkbox"/>
-                        <label class="form-check-label" for="exampleCheck3">Poseidon</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" id="exampleCheck4" type="checkbox"/>
-                        <label class="form-check-label" for="exampleCheck4">Poseidon</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" id="exampleCheck5" type="checkbox"/>
-                        <label class="form-check-label" for="exampleCheck5">Poseidon</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" id="exampleCheck6" type="checkbox"/>
-                        <label class="form-check-label" for="exampleCheck6">Poseidon</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" id="exampleCheck7" type="checkbox"/>
-                        <label class="form-check-label" for="exampleCheck7">Poseidon</label>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="menu-active">
-                    <h3 class="title"><span>
-                         Races</span><span>(1)</span></h3>
-                    <div class="list-check">
+                    </li>
+                    <li class="menu-active">
+                      <h3 class="title"><span>
+                           Races</span><span>(1)</span></h3>
+                      <div class="list-check">
 
-                      <div class="form-check">
-                        <input class="form-check-input" id="exampleCheck01" type="checkbox"/>
-                        <label class="form-check-label" for="exampleCheck01">Common</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" id="exampleCheck02" type="checkbox"/>
-                        <label class="form-check-label" for="exampleCheck02">Uncommon</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" id="exampleCheck03" type="checkbox"/>
-                        <label class="form-check-label" for="exampleCheck03">Rare</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" id="exampleCheck04" type="checkbox"/>
-                        <label class="form-check-label" for="exampleCheck04">Epic</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" id="exampleCheck05" type="checkbox"/>
-                        <label class="form-check-label" for="exampleCheck05">Legend</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" id="exampleCheck06" type="checkbox"/>
-                        <label class="form-check-label" for="exampleCheck06">Mythic</label>
-                      </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleCheck01" type="checkbox"/>
+                          <label class="form-check-label" for="exampleCheck01">Common</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleCheck02" type="checkbox"/>
+                          <label class="form-check-label" for="exampleCheck02">Uncommon</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleCheck03" type="checkbox"/>
+                          <label class="form-check-label" for="exampleCheck03">Rare</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleCheck04" type="checkbox"/>
+                          <label class="form-check-label" for="exampleCheck04">Epic</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleCheck05" type="checkbox"/>
+                          <label class="form-check-label" for="exampleCheck05">Legend</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" id="exampleCheck06" type="checkbox"/>
+                          <label class="form-check-label" for="exampleCheck06">Mythic</label>
+                        </div>
 
-                    </div>
-                  </li>
-                  <li>
-                    <h3><span class="title">
-                         Element</span></h3>
-                    <div class="list-check">
+                      </div>
+                    </li>
+                    <li>
+                      <h3><span class="title">
+                           Element</span></h3>
+                      <div class="list-check">
 
-                      <div class="list-item-fire">
-                        <div class="item-fire">
-                          <div class="form-check">
-                            <input class="form-check-input" id="exampleCheck001" type="checkbox"/>
-                            <label class="form-check-label" for="exampleCheck001"> <span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                        <div class="list-item-fire">
+                          <div class="item-fire">
+                            <div class="form-check">
+                              <input class="form-check-input" id="exampleCheck001" type="checkbox"/>
+                              <label class="form-check-label" for="exampleCheck001"> <span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                            </div>
                           </div>
-                        </div>
-                        <div class="item-fire">
-                          <div class="form-check">
-                            <input class="form-check-input" id="exampleCheck002" type="checkbox"/>
-                            <label class="form-check-label" for="exampleCheck002"> <span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                          <div class="item-fire">
+                            <div class="form-check">
+                              <input class="form-check-input" id="exampleCheck002" type="checkbox"/>
+                              <label class="form-check-label" for="exampleCheck002"> <span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                            </div>
                           </div>
-                        </div>
-                        <div class="item-fire">
-                          <div class="form-check">
-                            <input class="form-check-input" id="exampleCheck003" type="checkbox"/>
-                            <label class="form-check-label" for="exampleCheck003"><span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                          <div class="item-fire">
+                            <div class="form-check">
+                              <input class="form-check-input" id="exampleCheck003" type="checkbox"/>
+                              <label class="form-check-label" for="exampleCheck003"><span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                            </div>
                           </div>
-                        </div>
-                        <div class="item-fire">
-                          <div class="form-check">
-                            <input class="form-check-input" id="exampleCheck004" type="checkbox"/>
-                            <label class="form-check-label" for="exampleCheck004"> <span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                          <div class="item-fire">
+                            <div class="form-check">
+                              <input class="form-check-input" id="exampleCheck004" type="checkbox"/>
+                              <label class="form-check-label" for="exampleCheck004"> <span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                            </div>
                           </div>
-                        </div>
-                        <div class="item-fire">           
-                          <div class="form-check">
-                            <input class="form-check-input" id="exampleCheck005" type="checkbox"/>
-                            <label class="form-check-label" for="exampleCheck005"><span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                          <div class="item-fire">           
+                            <div class="form-check">
+                              <input class="form-check-input" id="exampleCheck005" type="checkbox"/>
+                              <label class="form-check-label" for="exampleCheck005"><span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                            </div>
                           </div>
-                        </div>
-                        <div class="item-fire">
-                          <div class="form-check">
-                            <input class="form-check-input" id="exampleCheck006" type="checkbox"/>
-                            <label class="form-check-label" for="exampleCheck006"><span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                          <div class="item-fire">
+                            <div class="form-check">
+                              <input class="form-check-input" id="exampleCheck006" type="checkbox"/>
+                              <label class="form-check-label" for="exampleCheck006"><span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3><span class="title">
-                         Level</span></h3>
-                    <div class="item-level">
-                      <h4 class="number">25</h4><div class="form-group">
+                    </li>
+                    <li>
+                      <h3><span class="title">
+                           Level</span></h3>
+                      <div class="item-level">
+                        <h4 class="number">25</h4><div class="form-group">
 <input type="range" class="custom-range" id="customRange1">
 <label for="customRange1">
 <span>0</span>
 <span class="float-right">100</span>
 </label>
 </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3><span class="title">
-                         Element</span></h3>
-                    <div class="list-check">
+                      </div>
+                    </li>
+                    <li>
+                      <h3><span class="title">
+                           Element</span></h3>
+                      <div class="list-check">
 
-                      <div class="list-item-fire">
-                        <div class="item-fire">
-                          <div class="form-check">
-                            <input class="form-check-input" id="exampleCheck011" type="checkbox"/>
-                            <label class="form-check-label" for="exampleCheck011"> <span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                        <div class="list-item-fire">
+                          <div class="item-fire">
+                            <div class="form-check">
+                              <input class="form-check-input" id="exampleCheck011" type="checkbox"/>
+                              <label class="form-check-label" for="exampleCheck011"> <span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                            </div>
                           </div>
-                        </div>
-                        <div class="item-fire">
-                          <div class="form-check">
-                            <input class="form-check-input" id="exampleCheck012" type="checkbox"/>
-                            <label class="form-check-label" for="exampleCheck012"> <span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                          <div class="item-fire">
+                            <div class="form-check">
+                              <input class="form-check-input" id="exampleCheck012" type="checkbox"/>
+                              <label class="form-check-label" for="exampleCheck012"> <span class="icon-fire"><img src="../../assets/images/fire.png" alt="Hero"/></span><span>Fire</span></label>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                </ul>
+                    </li>
+                  </ul>
 
+                </div>
               </div>
             </div>
             <!-- .page-sidebar-wrapper-->
             <div class="content-wapper-page">
               <div class="content-page">
-                <div class="cnt-hero-switch">
+                <div class="cnt-hero-switch" data-animate="ts-fadeInRight" data-delay=".2s">
                   <div class="list-switch">
                     <div class="item-switch">
                       <div class="text">Your Heroes</div>
@@ -271,7 +283,7 @@
                   </div>
                 </div>
                 <ul class="list-item">
-                  <li class="item item-blue">
+                  <li class="item item-blue" data-animate="ts-fadeInLeft" data-delay=".2s">
                     <div class="item-content">
                       <div class="thumbnails">
                         <div class="thumb">
@@ -303,7 +315,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="item item-green">
+                  <li class="item item-green" data-animate="ts-zoomOutIn" data-delay=".2s">
                     <div class="item-content">
                       <div class="thumbnails">
                         <div class="thumb">
@@ -335,7 +347,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="item item-yellow">
+                  <li class="item item-yellow" data-animate="ts-fadeInRight" data-delay=".2s">
                     <div class="item-content">
                       <div class="thumbnails">
                         <div class="thumb">
@@ -367,7 +379,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="item item-blue">
+                  <li class="item item-blue" data-animate="ts-fadeInLeft" data-delay=".2s">
                     <div class="item-content">
                       <div class="thumbnails">
                         <div class="thumb">
@@ -399,7 +411,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="item item-green">
+                  <li class="item item-green" data-animate="ts-zoomOutIn" data-delay=".2s">
                     <div class="item-content">
                       <div class="thumbnails">
                         <div class="thumb">
@@ -431,7 +443,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="item item-yellow">
+                  <li class="item item-yellow" data-animate="ts-fadeInRight" data-delay=".2s">
                     <div class="item-content">
                       <div class="thumbnails">
                         <div class="thumb">
@@ -463,7 +475,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="item item-blue">
+                  <li class="item item-blue" data-animate="ts-fadeInLeft" data-delay=".2s">
                     <div class="item-content">
                       <div class="thumbnails">
                         <div class="thumb">
@@ -495,7 +507,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="item item-green">
+                  <li class="item item-green" data-animate="ts-zoomOutIn" data-delay=".2s">
                     <div class="item-content">
                       <div class="thumbnails">
                         <div class="thumb">
@@ -527,7 +539,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="item item-yellow">
+                  <li class="item item-yellow" data-animate="ts-fadeInRight" data-delay=".2s">
                     <div class="item-content">
                       <div class="thumbnails">
                         <div class="thumb">
@@ -559,7 +571,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="item item-blue">
+                  <li class="item item-blue" data-animate="ts-fadeInLeft" data-delay=".2s">
                     <div class="item-content">
                       <div class="thumbnails">
                         <div class="thumb">
@@ -591,7 +603,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="item item-green">
+                  <li class="item item-green" data-animate="ts-zoomOutIn" data-delay=".2s">
                     <div class="item-content">
                       <div class="thumbnails">
                         <div class="thumb">
@@ -623,7 +635,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="item item-yellow">
+                  <li class="item item-yellow" data-animate="ts-fadeInRight" data-delay=".2s">
                     <div class="item-content">
                       <div class="thumbnails">
                         <div class="thumb">
@@ -671,26 +683,32 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="logo"><a href="#"><img src="../../assets/images/logo.svg" alt="index"/></a></div>
-            <div class="text-contact"><a href="#">Contact@ theatlantis.io</a>
-              <div class="copy-right">@ 2021 Atlantis Metaverse. All Right Reserved</div>
+            <div class="cnt-item-ft" data-animate="ts-fadeInLeft" data-delay=".2s">
+              <div class="logo"><a href="#"><img src="../../assets/images/logo.svg" alt="index"/></a></div>
+              <div class="text-contact"><a href="#">Contact@ theatlantis.io</a>
+                <div class="copy-right">@ 2021 Atlantis Metaverse. All Right Reserved</div>
+              </div>
             </div>
           </div>
           <div class="col-md-3">
-            <h3>About</h3>
-            <ul>
-              <li><a class="link-page" href="#" target="_blank">White</a></li>
-              <li><a class="link-page" href="#" target="_blank">Project</a></li>
-              <li><a class="link-page" href="#" target="_blank">Token</a></li>
-            </ul>
+            <div class="cnt-item-ft" data-animate="ts-zoomOutIn" data-delay=".2s">
+              <h3>About</h3>
+              <ul>
+                <li><a class="link-page" href="#" target="_blank">White</a></li>
+                <li><a class="link-page" href="#" target="_blank">Project</a></li>
+                <li><a class="link-page" href="#" target="_blank">Token</a></li>
+              </ul>
+            </div>
           </div>
           <div class="col-md-3">
-            <h3>social</h3>
-            <ul class="list-social">
-              <li><a class="link-app" href="#" target="_blank"> <i class="fa fa-paper-plane-o" aria-hidden="true"></i></a></li>
-              <li><a class="link-app" href="#" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a class="link-app" href="#" target="_blank"> <i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-            </ul>
+            <div class="cnt-item-ft" data-animate="ts-fadeInRight" data-delay=".2s">
+              <h3>social</h3>
+              <ul class="list-social">
+                <li><a class="link-app" href="#" target="_blank"> <i class="fa fa-paper-plane-o" aria-hidden="true"></i></a></li>
+                <li><a class="link-app" href="#" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a class="link-app" href="#" target="_blank"> <i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

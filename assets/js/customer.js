@@ -138,7 +138,7 @@
     var html = document.querySelector("html");
     document.querySelector(".mobi-overlay").addEventListener("click", (e) => { 
         mobi_overlays.classList.remove("show");
-        menu_sections.style.left = "-340px";
+        menu_sections.style.left = "-320px";
         html.classList.remove("disable-scroll");
     });
     document.querySelector(".burgers").addEventListener("click", (e) => { ;

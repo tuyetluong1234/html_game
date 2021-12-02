@@ -1,6 +1,6 @@
 .page-sidebar-wrapper
   .page-sidebar
-    .cnt-mobile-filter
+    .cnt-mobile-filter(data-animate="ts-fadeInLeft" data-delay=".2s")
       <button type="button" class="burgers" id="burger">
         <span class="burger-line"></span>
         <span class="burger-line"></span>
@@ -10,7 +10,10 @@
         h3 Filter
         button.btn.btn-clear-filter Clear filter
     .cnt-oder-sidebar
-      .cnt-orderby
+      .cnt-filter(data-animate="ts-fadeInLeft" data-delay=".2s")
+        h3 Filter
+        button.btn.btn-clear-filter Clear filter
+      .cnt-orderby(data-animate="ts-fadeInLeft" data-delay=".2s")
         .title
           |Sort buy
         .cnt-order-buy
@@ -24,7 +27,7 @@
               <li id="male">Male</li>
               <li id="female">Female</li>
             </ul>
-      ul.page-sidebar-menu(data-keep-expanded='false', data-auto-scroll='true', data-slide-speed='200')
+      ul.page-sidebar-menu(data-keep-expanded='false', data-auto-scroll='true', data-slide-speed='200' data-animate="ts-fadeInLeft" data-delay=".2s")
         li.menu-active
           h3.title
             span 
